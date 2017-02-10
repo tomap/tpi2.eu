@@ -1,0 +1,34 @@
+# Index Page
+index_banner_text: Thomas Piart
+index_font_awesome_icon_css: fa fa-handshake-o
+
+# Header
+menu:
+  Home: /
+  Archives: /archives
+  Resume: /resume.html
+  
+# Post
+default_post_title: Untitled
+default_post_icon: fa-file-text-o
+
+# Archive Date Format
+archive_date_format: MMM YYYY
+archive_font_awesome_icon_css: fa-folder-open
+
+# Comments.
+comments:
+  # Disqus comments
+  disqus_shortname: tpii
+
+# Google Analytics Tracking ID
+google_analytics:
+
+# Social Media Platforms
+social_platforms:
+  - url: https://stackoverflow.com/users/383029/tomap
+    fa_icon: fa-stack-overflow
+  - url: https://github.com/tomap/
+    fa_icon: fa-github
+  - url: https://linkedin.com/in/thomaspiart
+    fa_icon: fa-linkedin

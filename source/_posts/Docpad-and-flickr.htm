@@ -1,0 +1,47 @@
+---
+title: Docpad and flickr
+tags: [docpad,image,flickr,oauth]
+date: 2013-03-10
+icon: fa-flickr
+---
+<P>
+After my last post, I wanted to write something about IDN and browser support.<br>
+So I made lot's of screen shots about how well IDN is supported.<br>
+Then I figured that if I ever wanted to do more than one post with images on this blog, I had to host those images somewhere...<br>
+So, I started looking at some image hosting services, like google, 500px, ... and in the end, I choose flickr because they have an API, and I already had an account.<br>
+In order to avoid uploading images one by one and linking them to my post, I have tried to automate this process using a docpad plugin:
+</P>
+<h2>
+	docpad-plugin-flickrimages
+</h2>
+<P>
+	This plugin is a fork from <a href='https://github.com/docpad/docpad-plugin-associatedfiles/'>docpad-flickr-associatedfiles</a>.
+	It's a start :).<br>
+	Here is how it works:
+	<ol>
+		<li>List all images in a dedicated folder</li>
+		<li>Call Flickr to get the list of images with a tag ("docpad" by default, but can be configured)</li>
+		<li>Get additional properties (url of images in various sizes,...)</li>
+		<li>If local image is not on flickr, upload it</li>
+		<li>If local image is on flickr, check the last update, and update the image if necessary</li>
+		<li>Remove local image from filethat needs to be copied to the output directory</li>
+		<li>In any page, add a link to an image using document.getFlickrImage('my image.png')</li>
+		<li> this call will be replace by a reference to the image on flickr</li>
+	</ol>
+	Currently some thing are not yet working:
+	<ul>
+		<li>Update an image</li>
+		<li>There are no tests</li>
+		<li>Error cases are not working</li>
+		<li>...</li>
+	</ul>
+</p>
+<p>
+	A little example:
+</p>
+[EDIT: Fev 2017: does not work yet in Hugo]<br>
+%- @getDocument().getFlickrImage('blog post code.png') %<br>
+%- @getDocument().getFlickrImage('beaglebone.jpg') %<br>
+<P>
+	Also: by default, getFlickrImage return a piece of HTML that works fine with fancybox.
+</p>

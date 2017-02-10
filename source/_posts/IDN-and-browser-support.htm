@@ -1,0 +1,43 @@
+---
+title: IDN and browser support
+tags: ["idn","browser","support"]
+date: 2014-01-05
+icon: fa-globe
+---
+<P>
+
+	This post is about IDN and browser support.
+</P>
+<P>
+First of all, http does not support unicode :). To <i>do</i> unicode, they use a <bp>punycode</b> to convert any domain name into it's ascii equivalent: for example, my domain <b>tpî.eu</b> is translated to <b>http://xn--tp-rja.eu/</b>.
+</P>
+I bought this IDN domain (tpî.eu), found this idea very clever until I found out that browser support wasn't so good. It goes from no support to little issues to perfect.
+</P>
+<P>
+Those differences can be explained because IDN is new and viewed as a potential security threat.
+</P>
+<P>
+For example, using similar characters in ascii and unicode, one could spoof the content of ebay.com and send you to еbay.com:
+You did not notice any differences? Have a better look: <u>ebay.com</u> and <u>еbay.com</u> . notice the difference between <b>e</b> and <b>е</b>: the last one is a Cyrillic character. (see <a href="http://en.wikipedia.org/wiki/IDN_homograph_attack">wikipedia about that</a>)
+</P>
+<P>
+To avoid that, Registar are supposed to do some similarity check and reject possible spoof. Browser on the other side also have some kind of protection which varies from one browser to another. If the check fails, you'll see <i>safe</i> punycode.
+</P>
+<P>
+Let's start:
+</P>
+<h2>Firefox 19</h2>
+<P>
+On Mac, <b>.eu</b> extension is not supposed to display IDN, so it's not part of a white list, so by default, you should see punycode. What I did was to add a key to about:config to add .eu to the white list:
+</p>
+[EDIT fev 2017: does not work yet]<br>
+%- @getDocument().getFlickrImage('Firefox Mac About Config.png') %
+<p>And here is the result:</p>
+%- @getDocument().getFlickrImage('Firefox Mac.png')  %
+<h2>Chrome on Android</h2>
+<p>On Android, with Chrome: it does not work and shows punycode:</p>
+%- @getDocument().getFlickrImage('chrome android.png')  %
+
+<p>
+	Note: I wrote this article one year ago (in March 2013) and never took time to publish it :(
+</p>

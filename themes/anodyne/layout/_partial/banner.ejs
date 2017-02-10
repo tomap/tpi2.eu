@@ -1,0 +1,27 @@
+<!-- Banner -->
+<div class="w-100 bg-1 ph5-ns ph3 text-light">
+    
+    <nav class="db dt-l w-100 mw8 center border-box pv3">
+        <div class="db dtc-l v-mid w-100 w-75-l tc tr-l">
+            <% for (var i in theme.menu) { %>
+                <a class="link dim f6 f5-l dib mr3 mr4-l white" 
+                    href="<%- url_for(theme.menu[i]) %>" 
+                    title="<%= i %>">
+                    <%= i %>
+                </a>
+            <% } %>
+        </div>
+    </nav>
+
+    <!-- Title -->
+    <div class="w-100 mw8 center dt">
+        <div class="dtc v-mid white">
+            <h1 class="f1-l f2-m tc tc-m tl-ns"><%- mainText %></h1>
+        </div>
+    </div>
+
+    <!-- Icon -->
+    <div class="relative w-100 mw8 center white dn dn-m db-ns">
+        <i class="header-icon fa <%- faIconCss %>"></i>
+    </div>
+</div>
