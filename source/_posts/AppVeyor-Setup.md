@@ -60,14 +60,14 @@ deploy:
 It takes around 2 minutes to build (due to npm package restore and FTP upload, mainly).
 You can see the latest logs here: https://ci.appveyor.com/project/tomap/tpi2-eu
 And the AppVeyor.yaml is pushed on my repo: https://github.com/tomap/tpi2.eu/blob/master/appveyor.yml
-I also added an indispensable badge in my [ReadMe](https://github.com/tomap/tpi2.eu/blob/master/Readme.md): [![Build status](https://ci.appveyor.com/api/projects/status/25vmdbr9me0qvirw?svg=true)](https://ci.appveyor.com/project/tomap/tpi2-eu)
+I also added an indispensable badge in my [ReadMe](https://github.com/tomap/tpi2.eu/blob/master/Readme.md): [![Build status](https://ci.appveyor.com/api/projects/status/amvptl7n6hj3j8i6?svg=true)](https://ci.appveyor.com/project/tomap/tpi2-eu)
 
 EDIT: 
-It seems that when using **appveyor.yml** to store the configuration, AppVeyor uses a different virtual machine with a lower version of NodeJS. So, google again, and I found help in their support page again, and I had to add:
+It seems that when using **appveyor.yml** to store the configuration, AppVeyor uses a different virtual machine with a lower version of NodeJS. So, google again, and I found [help in their support page again](https://www.appveyor.com/docs/lang/nodejs-iojs/), and I had to add:
 ```
 ...
 install:
-  - ps: Install-Product node ''
+- ps: Install-Product node ''
 ...
 ```
 

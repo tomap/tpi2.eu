@@ -1,11 +1,14 @@
 version: 1.1.{build}
 install:
-  - ps: Install-Product node ''
+- ps: Install-Product node 'Stable'
 build_script:
 - cmd: >-
     npm install
+
     npm -g install hexo-cli
+    
     hexo generate
+
 test: off
 before_deploy:
 - ps: $root = Resolve-Path .\public; [IO.Directory]::GetFiles($root.Path, '*.*', 'AllDirectories') | % { Push-AppveyorArtifact $_ -FileName $_.Substring($root.Path.Length + 1) -DeploymentName www }
