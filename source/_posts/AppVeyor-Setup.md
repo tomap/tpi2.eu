@@ -33,7 +33,7 @@ I googled again and found [that AppVeyor documentation page that helped me](http
 
 After some trial and errors (~40 of them), I end up with something working. This is all nice and great, but I don't like having all the configuration in AppVeyor, I prefer to have it in my Git Repository, so I can reproduce it somewhere else and I can share it also :)
 
-Here is the exported version of my configuration: **AppVeyor.yaml**
+Here is the exported version of my configuration: **AppVeyor.yml**
 ```
 version: 1.1.{build}
 build_script:
@@ -59,5 +59,16 @@ deploy:
 ```
 It takes around 2 minutes to build (due to npm package restore and FTP upload, mainly).
 You can see the latest logs here: https://ci.appveyor.com/project/tomap/tpi2-eu
-And the AppVeyor.yaml is pushed on my repo: https://github.com/tomap/tpi2.eu/blob/master/appveyor.yaml
+And the AppVeyor.yaml is pushed on my repo: https://github.com/tomap/tpi2.eu/blob/master/appveyor.yml
 I also added an indispensable badge in my [ReadMe](https://github.com/tomap/tpi2.eu/blob/master/Readme.md): [![Build status](https://ci.appveyor.com/api/projects/status/25vmdbr9me0qvirw?svg=true)](https://ci.appveyor.com/project/tomap/tpi2-eu)
+
+EDIT: 
+It seems that when using **appveyor.yml** to store the configuration, AppVeyor uses a different virtual machine with a lower version of NodeJS. So, google again, and I found help in their support page again, and I had to add:
+```
+...
+install:
+  - ps: Install-Product node ''
+...
+```
+
+Which should install latest version of node (7.x) :)
