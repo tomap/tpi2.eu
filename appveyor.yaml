@@ -1,0 +1,21 @@
+version: 1.1.{build}
+build_script:
+- cmd: >-
+    npm install
+    npm -g install hexo-cli
+    hexo generate
+test: off
+before_deploy:
+- ps: $root = Resolve-Path .\public; [IO.Directory]::GetFiles($root.Path, '*.*', 'AllDirectories') | % { Push-AppveyorArtifact $_ -FileName $_.Substring($root.Path.Length + 1) -DeploymentName www }
+deploy:
+- provider: FTP
+  host: ftp.cluster014.hosting.ovh.net
+  protocol: ftp
+  username: xntprja
+  password:
+    secure: xXShqZFpQ6Jeg8O86XJ8fiqe7AiTHWrFaS6ic4AVTtE=
+  folder: /www
+  artifact: www
+  active_mode: false
+  beta: true
+  debug: false
