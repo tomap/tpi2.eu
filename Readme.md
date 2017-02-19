@@ -1,7 +1,6 @@
 # [Thomas Piart's Website](https://tpî.eu), built with [Hexo](https://hexo.io)
 
-[![Dependency Status](https://david-dm.org/tomap/tpi2.eu.png)](https://david-dm.org/tomap/tpi2.eu) - [![Build status](https://ci.appveyor.com/api/projects/status/25vmdbr9me0qvirw?svg=true)](https://ci.appveyor.com/project/tomap/tpi2-eu)
-
+[![Dependency Status](https://david-dm.org/tomap/tpi2.eu.png)](https://david-dm.org/tomap/tpi2.eu) - [![Build status](https://ci.appveyor.com/api/projects/status/amvptl7n6hj3j8i6?svg=true)](https://ci.appveyor.com/project/tomap/tpi2-eu)
 
 ## How To
 
