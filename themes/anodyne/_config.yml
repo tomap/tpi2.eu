@@ -6,7 +6,7 @@ index_font_awesome_icon_css: fa fa-handshake-o
 menu:
   Home: /
   Archives: /archives
-  Resume: /resume.html
+  Resume: /resume
   
 # Post
 default_post_title: Untitled

@@ -1,5 +1,5 @@
 <!-- Disqus Comments -->
-<% if (theme.comments && theme.comments.disqus_shortname){ %>
+<% if (page.layout == 'post' && theme.comments && theme.comments.disqus_shortname){ %>
 <script type="text/javascript">
     var disqus_shortname = '<%= theme.comments.disqus_shortname %>';
     (function(){
