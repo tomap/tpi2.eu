@@ -18,7 +18,7 @@ deploy:
   protocol: ftp
   username: xntprja
   password:
-    secure: xXShqZFpQ6Jeg8O86XJ8fiqe7AiTHWrFaS6ic4AVTtE=
+    secure: Z4qtNeq80Mfc805WuSF9Pz0FQkxg2lpB10iP9xbU4cw=
   folder: /www
   artifact: www
   active_mode: false
