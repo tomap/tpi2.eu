@@ -73,8 +73,8 @@
 # If you don't use filenames to version, lower the CSS and JS to something like
 # "access plus 1 week".
 
-# <IfModule mod_expires.c>
-#   ExpiresActive on
+<IfModule mod_expires.c>
+   ExpiresActive on
 
 # # Perhaps better to whitelist expires rules? Perhaps.
 #   ExpiresDefault                          "access plus 1 month"
@@ -117,10 +117,10 @@
 #   ExpiresByType application/vnd.ms-fontobject "access plus 1 month"
 
 # # CSS and JavaScript
-#   ExpiresByType text/css                  "access plus 1 year"
+   ExpiresByType text/css                  "access plus 1 day"
 #   ExpiresByType application/javascript    "access plus 1 year"
 
-# </IfModule>
+</IfModule>
 
 
 # ----------------------------------------------------------------------
