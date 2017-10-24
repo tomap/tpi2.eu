@@ -131,7 +131,7 @@ Likewise, you can configure the home page's title, subtitle and icon in the `_co
 # Index Page
 index_banner_text: Welcome to Anodyne
 index_banner_text_secondary: Create Websites. Make Magic.
-index_font_awesome_icon_css: fa fa-magic
+index_font_awesome_icon_css: fa-magic
 ```
 
 ### Archive Date Format
