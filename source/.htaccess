@@ -95,7 +95,7 @@
 #   ExpiresByType application/atom+xml      "access plus 1 hour"
 
 # # Favicon (cannot be renamed)
-#   ExpiresByType image/x-icon              "access plus 1 week"
+ExpiresByType image/x-icon              "access plus 1 week"
 
 # # Media: images, video, audio
 #   ExpiresByType image/gif                 "access plus 1 month"
@@ -117,7 +117,7 @@
 #   ExpiresByType application/vnd.ms-fontobject "access plus 1 month"
 
 # # CSS and JavaScript
-   ExpiresByType text/css                  "access plus 1 day"
+ExpiresByType text/css                  "access plus 1 day"
 #   ExpiresByType application/javascript    "access plus 1 year"
 
 </IfModule>
