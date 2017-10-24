@@ -1,24 +1,27 @@
-<a href="<%- url_for(item.path) %>">
-    <div class="dt w-100 hover-border-main-color pointer pa3 border-color bl mv4">
-        <div class="dtc v-mid w-90 black-70">
-            <div>
+<div class="relative">
+    <a href="<%- url_for(item.path) %>">
+        <div class="dt w-100 hover-border-main-color pointer pa3 border-color bl mv4">
+            <div class="dtc v-mid w-90 black-70">
+                
                 <% if(item.date) { %>
-                    <span class="f5 fw3 lh-copy pr4"><%= item.date.format(config.date_format) %></span> 
+                    <div class="f5 fw3 lh-copy pr4"><%= item.date.format(config.date_format) %></div> 
                 <% } %>
-                <% if (item.tags && item.tags.length) {
-                    var tags = [];
-                    item.tags.forEach(function(tag) {
-                        <!-- Need to use JS to handle link click to avoid display issues. Best to put here than outer div for SEO. -->
-                        tags.push('<span class="fake-link fw3 ph1 dib glow o-80" onclick="location.href = \'' + config.root + tag.path + '\'; return false;">#' + tag.name + '</span>');
-                    });
-                %>
-                <%- tags.join(' ') %>
-                <% } %>
+                <span class="f3 fw3 lh-copy"><%- item.title || theme.default_post_title || __('default_post_title') %></span>
             </div>
-            <span class="f3 fw3 lh-copy"><%- item.title || theme.default_post_title || __('default_post_title') %><span>
+            <div class="dtc v-mid w-10 f1 black-50 tr">
+                <i class="fa <%- item.icon || theme.default_post_icon %>"></i>
+            </div>
         </div>
-        <div class="dtc v-mid w-10 f1 black-50 tr">
-            <i class="fa <%- item.icon || theme.default_post_icon %>"></i>
-        </div>
+    </a>
+    <div class="absolute top-1 left-1 ml6">
+        <% if (item.tags && item.tags.length) {
+            var tags = [];
+            item.tags.forEach(function(tag) {
+                <!-- Need to use JS to handle link click to avoid display issues. Best to put here than outer div for SEO. -->
+                tags.push('<a class="fw3 ph1 dib glow o-80" href="' + config.root + tag.path + '">#' + tag.name + '</a>');
+            });
+        %>
+        <%- tags.join(' ') %>
+        <% } %>
     </div>
-</a>
+</div>
