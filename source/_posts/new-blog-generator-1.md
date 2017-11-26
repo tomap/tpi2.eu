@@ -33,10 +33,10 @@ Not so complicated.
 
 However, in then end, I looked at the source code and found some ugliness:
 ```
-    <base href="http://xn--tp-rja.eu/">
+    <base href="https://xn--tp-rja.eu/">
     <meta name="generator" content="Hugo 0.18.1" />
-    <link rel="canonical" href="http://xn--tp-rja.eu/">
-    <link href="http://tp%C3%AE.eu/index.xml" rel="alternate" type="application/rss+xml" title="Thomas Piart" />
+    <link rel="canonical" href="https://xn--tp-rja.eu/">
+    <link href="https://tp%C3%AE.eu/index.xml" rel="alternate" type="application/rss+xml" title="Thomas Piart" />
 ```
 After some digging in the options, it found two options:
 ```

@@ -12,7 +12,7 @@ It is less convenient than the [plugin I developed for Docpad](https://github.co
 {% flickr 32865582372 %}
 ```
 
-Also, I still have to add something like fancyBox which btw seem to have a [version 3 available](http://fancyapps.com/fancybox/3/).
+Also, I still have to add something like fancyBox which btw seem to have a [version 3 available](https://fancyapps.com/fancybox/3/).
 
 So my todo list for this site:
 - add fancyBox

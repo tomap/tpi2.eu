@@ -11,7 +11,7 @@ Thanks to DocPad, I'm learning new languages:
 - Markdown is also very simple. Makes you focus on text, not on format. Like wiki syntax.
 - [CoffeeKup](http://coffeekup.org/) is interesting but very confusing when you practiced HTML for a long time.
 
-Originally, this site skeleton was a clone of [Benjamin Lupton's website](http://BaLupton.com), but I made some changes.
+Originally, this site skeleton was a clone of [Benjamin Lupton's website](https://BaLupton.com), but I made some changes.
 Everything has been pushed to GitHub.
 
 I also restored Disqus comments.
