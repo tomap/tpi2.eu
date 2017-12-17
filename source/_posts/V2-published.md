@@ -2,7 +2,7 @@
 date : 2017-02-16
 title : V2 Published
 icon: fa-thumbs-up
-tags: ["letsencrypt", "github"]
+tags: ["letsencrypt", "github", "hosting"]
 ---
 V2 of this site has been published.
 
