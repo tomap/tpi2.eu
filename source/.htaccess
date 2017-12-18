@@ -414,3 +414,4 @@ AddCharset utf-8 .atom .css .js .json .rss .vtt .xml
 #   php_value session.cookie_httponly true
 # </IfModule>
 Header set Strict-Transport-Security "max-age=31536000" env=HTTPS
+Header set X-Content-Type-Options nosniff
