@@ -2,7 +2,7 @@
 date : 2017-12-20
 title : Testing Firebase hosting
 icon: fa-fire
-tags: ["firebase", "hosting", "hexo"]
+tags: ["firebase", "hosting", "hexo", "travis"]
 ---
 
 Using Travis CI, I tried deploying this hexo site to [firebase hosting](https://firebase.google.com/products/hosting/).
@@ -60,3 +60,5 @@ deploy:
 The current version is stored here: https://github.com/tomap/tpi2.eu/blob/master/.travis.yml
 
 And the result can be seen here: https://tpi-eu.firebaseapp.com/ (I added a specific robots.txt to disallow search engine indexing)
+
+Travis build logs are available here: https://travis-ci.org/tomap/tpi2.eu
