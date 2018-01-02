@@ -19,7 +19,7 @@
     "hexo-tag-flickr": "^0.4.0"
   },
   "devDependencies": {
-    "tachyons": "^4.9.0",
+    "tachyons": "^4.9.1",
     "font-awesome": "^4.7.0"
   }
 }
