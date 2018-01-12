@@ -1,7 +1,6 @@
 # [Thomas Piart's Website](https://tpî.eu), built with [Hexo](https://hexo.io).
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/tomap/tpi2.eu.svg)](https://greenkeeper.io/)
-
 [![Dependency Status](https://david-dm.org/tomap/tpi2.eu.svg)](https://david-dm.org/tomap/tpi2.eu)
 [![Dependency Status](https://david-dm.org/tomap/tpi2.eu/dev-status.svg)](https://david-dm.org/tomap/tpi2.eu?type=dev)
 [![Build status](https://ci.appveyor.com/api/projects/status/amvptl7n6hj3j8i6?svg=true)](https://ci.appveyor.com/project/tomap/tpi2-eu)
