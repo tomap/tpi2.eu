@@ -7,7 +7,7 @@ tags: ["firebase", "hosting", "hexo", "travis"]
 
 Using Travis CI, I tried deploying this hexo site to [firebase hosting](https://firebase.google.com/products/hosting/).
 
-It includes 1Gb of storage and 10 Gb of data transfert monthly. So it would be a huge increase compared to OVH Start1m plan (also free).
+It includes 1Gb of storage and 10 Gb of data transfer monthly. So it would be a huge increase compared to OVH Start1m plan (also free).
 
 It also supports Custom domain (So I could host this site or a subdomain on Firebase) & free SSL certificates.
 
@@ -27,7 +27,7 @@ Here is the fix:
 ```
 sudo gem install -n /usr/local/bin travis
 ```
-Once this is fixed, it is possible to generate your encrytion key:
+Once this is fixed, it is possible to generate your encryption key:
 ```
 travis encrypt "xyz<my ci key>wxy" --add deploy.token
 ```

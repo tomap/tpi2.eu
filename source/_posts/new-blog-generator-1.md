@@ -10,7 +10,7 @@ After [some research](https://www.staticgen.com/), I found [Hugo](https://gohugo
 
 The change was simple.
 
-I followed the [quick start tutorial](https://gohugo.io/overview/quickstart/), then picked a new theme: [hugo-frais](https://github.com/the2ne/hugo-frais) and transfered posts from the old site.
+I followed the [quick start tutorial](https://gohugo.io/overview/quickstart/), then picked a new theme: [hugo-frais](https://github.com/the2ne/hugo-frais) and transferred posts from the old site.
 
 Post headers are similar. Before:
 ```

@@ -8,7 +8,7 @@ tags: ["hexo", "nodejs", "security"]
 In the last weeks, I have slightly modified this site to bring the following nice improvements:
 * Remove most of the JavaScript (Except to launch Disqus. See https://github.com/tomap/tpi2.eu/blob/master/themes/anodyne/layout/_partial/comments.ejs)
 * Add HSTS header & nosniff header. See https://github.com/tomap/tpi2.eu/blob/master/source/.htaccess#L416
-* Include the assets I use (namely Fontawsome & tachyon) in the dev dependencies of package.json so that I can easily spot if thy are updated. Either here: https://david-dm.org/tomap/tpi2.eu?type=dev or using [Version Lens](https://marketplace.visualstudio.com/items?itemName=pflannery.vscode-versionlens)
+* Include the assets I use (namely FontAwesome & tachyon) in the dev dependencies of package.json so that I can easily spot if thy are updated. Either here: https://david-dm.org/tomap/tpi2.eu?type=dev or using [Version Lens](https://marketplace.visualstudio.com/items?itemName=pflannery.vscode-versionlens)
 * Enable [hexo-filter-cleanup](https://github.com/mamboer/hexo-filter-cleanup) plugin which compresses my HTML & CSS
 
 After all that this site weights less than 200 KB!
