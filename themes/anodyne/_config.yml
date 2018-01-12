@@ -16,7 +16,7 @@ default_post_icon: fa-file-text-o
 archive_date_format: MMM YYYY
 archive_font_awesome_icon_css: fa-folder-open
 
-twitter_handle: @tomap
+twitter_handle: '@tomap'
 
 # Comments.
 # comments:
