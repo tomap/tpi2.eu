@@ -16,13 +16,15 @@ default_post_icon: fa-file-text-o
 archive_date_format: MMM YYYY
 archive_font_awesome_icon_css: fa-folder-open
 
+twitter_handle: @tomap
+
 # Comments.
-comments:
+# comments:
   # Disqus comments
-  disqus_shortname: tpii
+  # disqus_shortname: tpii
 
 # Google Analytics Tracking ID
-google_analytics:
+# google_analytics:
 
 # Social Media Platforms
 social_platforms:
@@ -30,5 +32,12 @@ social_platforms:
     fa_icon: fa-stack-overflow
   - url: https://github.com/tomap/
     fa_icon: fa-github
+    type: github
+    repository: tpi2.eu
   - url: https://linkedin.com/in/thomaspiart
     fa_icon: fa-linkedin
+    type: linkedin
+  - url: https://twitter.com/tomap
+    fa_icon: fa-twitter
+    type: twitter
+    account: tomap

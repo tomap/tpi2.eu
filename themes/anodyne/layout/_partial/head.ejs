@@ -45,10 +45,17 @@
     <% } %>
 
     <!--Page Cover-->
-    <% if (page.share_cover) { %>
+    <% if (page.icon || theme.default_post_icon){ %>
+        <meta property="og:image" content="https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/30dda99e/black/png/256/<%= (page.icon || theme.default_post_icon).substr(3) %>.png" />
+    <% } else if (page.share_cover) { %>
         <meta property="og:image" content="<%= config.url %><%= page.share_cover %>" />
     <% } else if (config.cover) { %>
         <meta property="og:image" content="<%= config.url %><%= config.cover %>"/>
+    <% } %>
+
+    <!-- Page permalink -->
+    <% if (page.permalink){ %>
+        <meta property="og:url" content="<%= page.permalink %>" />
     <% } %>
 
     <meta name="twitter:card" content="summary" />
