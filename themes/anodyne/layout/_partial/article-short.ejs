@@ -1,6 +1,6 @@
-<div class="relative">
+<div class="relative-l">
     <a href="<%- url_for(item.path) %>">
-        <div class="dt w-100 hover-border-main-color pointer pa3 border-color bl mv4">
+        <div class="dt w-100 hover-border-main-color pointer pa3 b--white bl mv4-l">
             <div class="dtc v-mid w-90 black-70">
                 
                 <% if(item.date) { %>
@@ -13,7 +13,7 @@
             </div>
         </div>
     </a>
-    <div class="absolute top-1 left-1 ml6 mr5">
+    <div class="absolute-l top-1 left-1 ml2 ml6-l mr5-l">
         <% if (item.tags && item.tags.length) {
             var tags = [];
             item.tags.forEach(function(tag) {

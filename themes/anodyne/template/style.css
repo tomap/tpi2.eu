@@ -1,29 +1,8 @@
-body {
-    font-family: Helvetica, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
-
-.vh-40 {
-    height: 40vh;
-}
-
 .bg-1 {
     background: #36b1da;
     background: -moz-linear-gradient(left,  #36b1da 0%, #29c6cd 100%);
     background: -webkit-linear-gradient(left,  #36b1da 0%,#29c6cd 100%);
     background: linear-gradient(to right,  #36b1da 0%,#29c6cd 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#36b1da', endColorstr='#29c6cd',GradientType=1 );
-}
-
-.pab-100px {
-    padding-bottom: 100px;
-}
-
-.w8 {
-    width: 64rem;
-}
-
-.tj {
-    text-align: justify;
 }
 
 .header-icon {
@@ -32,10 +11,6 @@ body {
     position: absolute;
     bottom: -3rem;
     right: 6rem;
-}
-
-.border-color {
-    border-color: white;
 }
 
 .hover-color {
