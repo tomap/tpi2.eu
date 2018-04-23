@@ -83,3 +83,6 @@ deploy:
 
 hfc_favicons:
   enable: false
+
+uncss:
+  priority : 12
