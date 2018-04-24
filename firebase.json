@@ -7,6 +7,13 @@
         "**/node_modules/**",
         "**/.htaccess",
         "**/google*.html"
-      ]
-    }
-  }
+      ],
+      "headers": [ {
+        "source" : "**/*.@(eot|otf|ttf|ttc|woff|woff2|svg)",
+        "headers" : [ {
+          "key" : "Cache-Control",
+          "value" : "max-age=365000000, immutable"
+      } ]
+      }]
+   }
+}
