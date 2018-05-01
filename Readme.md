@@ -10,7 +10,7 @@
 To launch this website:
 - clone this repo
 - run ```npm install```
-- run ```npm -g install hexo```
+- run ```npm -g install hexo-cli```
 - run ```hexo server -o``` (to run locally)
 - run ```hexo generate``` (to generate into Public folder)
 
