@@ -22,5 +22,8 @@
   "devDependencies": {
     "tachyons": "^4.9.1",
     "font-awesome": "^4.7.0"
+  },
+  "engines": {
+    "node": ">= 8"
   }
 }
