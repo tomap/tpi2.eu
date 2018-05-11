@@ -9,10 +9,7 @@ build_script:
     
     hexo generate
 
-    copy /?
-
-    copy indexing/robots.txt public/robots.txt
-    
+    copy indexing\robots.txt public\robots.txt
     
 test: off
 before_deploy:
