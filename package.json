@@ -15,12 +15,12 @@
     "hexo-renderer-ejs": "^0.3.1",
     "hexo-renderer-marked": "^0.3.2",
     "hexo-renderer-stylus": "^0.3.3",
-    "hexo-server": "^0.3.1",
+    "hexo-server": "^0.3.2",
     "hexo-tag-flickr": "^0.4.0",
     "hexo-uncss": "https://github.com/tomap/hexo-uncss.git"
   },
   "devDependencies": {
-    "tachyons": "^4.9.1",
+    "tachyons": "^4.10.0",
     "font-awesome": "^4.7.0"
   }
 }
