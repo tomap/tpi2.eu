@@ -9,6 +9,8 @@ build_script:
     
     hexo generate
 
+    copy indexing\robots.txt public\robots.txt
+    
 test: off
 before_deploy:
 - ps: $root = Resolve-Path .\public; [IO.Directory]::GetFiles($root.Path, '*.*', 'AllDirectories') | % { Push-AppveyorArtifact $_ -FileName $_.Substring($root.Path.Length + 1) -DeploymentName www }
@@ -24,3 +26,5 @@ deploy:
   active_mode: false
   beta: true
   debug: false
+  on:
+      branch: master

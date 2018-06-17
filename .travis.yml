@@ -13,9 +13,6 @@ install:
 - npm install
 script:
 - hexo generate
-before_deploy:
-- cp firebase/robots.txt public/robots.txt
-- cp public/assets/404.html public/404.html
 deploy:
   skip_cleanup: true
   provider: firebase
