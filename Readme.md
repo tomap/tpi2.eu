@@ -21,3 +21,5 @@ To launch this website:
 This website was created with [Hexo](https://hexo.io) and uses a modified version of [Anodyne Theme](https://github.com/klugjo/hexo-theme-anodyne)
 
 Unless stated otherwise, all content is licensed under the [Creative Commons Attribution License](https://creativecommons.org/licenses/by/4.0/ "Visit Website") and code licensed under the [MIT License](https://opensource.org/licenses/mit-license.php "Visit Website"), © [Thomas Piart](https://tpî.eu "Visit Website")
+
+Brand Icons (Github, Twitter, ...) are from [FontAwesome](https://fontawesome.com/) under [Creative Commons Attribution License](https://creativecommons.org/licenses/by/4.0/).
