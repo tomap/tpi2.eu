@@ -2,12 +2,6 @@
   background $gradient-color-1
   background linear-gradient(to right, $gradient-color-1 0%, $gradient-color-2 100%)
 
-.right-6
-  right 6rem
-
-.text-main-color
-  color $main-color
-
 .hover-border-main-color
   transition all 0.3s cubic-bezier(.25,.8,.25,1)
   &:hover
@@ -21,6 +15,13 @@
 .cursor-default
   cursor default
 
-.ec-share, .ec-tag
+.ec.ec-mono
     color transparent
     text-shadow 0 0 0 $main-color
+    filter none
+
+@media screen and (min-width: 60em) {
+  .pr7p-l {
+      padding-right: 11rem;
+  }
+}

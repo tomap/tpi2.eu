@@ -6,6 +6,7 @@
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    filter: sepia(90%);
 }
 
 .ec:before {
