@@ -9,11 +9,19 @@
         "**/google*.html"
       ],
       "headers": [ {
-        "source" : "**/*.@(eot|otf|ttf|ttc|woff|woff2|svg)",
+        "source" : "**/*.@(eot|otf|ttf|ttc|woff|woff2|svg|ico)",
         "headers" : [ {
           "key" : "Cache-Control",
           "value" : "max-age=365000000, immutable"
-      } ]
-      }]
-   }
+          } ]
+        },
+        {
+        "source" : "**/*.@(css)",
+        "headers" : [ {
+          "key" : "Cache-Control",
+          "value" : "max-age=700000"
+          } ]
+        }
+      ]
+  }
 }
