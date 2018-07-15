@@ -5,8 +5,8 @@ index_font_awesome_icon_css: fa-handshake-o
 # Header
 menu:
   Home: /
-  Archives: /archives
-  Resume: /resume
+  Archives: /archives/
+  Resume: /resume/
   
 # Post
 default_post_title: Untitled
