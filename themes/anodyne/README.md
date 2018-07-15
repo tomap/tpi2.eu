@@ -28,7 +28,6 @@ Note: No Image Gallery. Useless and too heavyweight. Feel free to develop one an
 ## External libraries used
 
 - [tachyons](http://tachyons.io/)
-- [Font Awesome](http://fontawesome.io/icons/)
 
 ## Installation
 
@@ -57,7 +56,7 @@ Each post supports the standard `title`, `date`, `categories`, `tags`.
 
 ### Post Icon
 
-On top of that, you can specify a custom font-Awesome icon in the front matter:
+On top of that, you can specify an icon (ascii/unicode emoji) in the front matter:
 
 Example:
 
@@ -65,7 +64,7 @@ Example:
 title: Welcome to Anodyne
 tags: ["ThisIsATag", "Intro", "Welcome", "Anodyne"]
 categories: ["Configuration", "Hexo"]
-icon: fa-handshake-o
+icon: handshake
 ---
 ```
 
@@ -120,7 +119,7 @@ default_post_title: Untitled
 The default post icon (used when no icon is specified) is configured in the theme's `_config.yml`.
 
 ``` yaml
-default_post_icon: fa-file-text-o
+default_post_icon: magic
 ```
 
 ### Home page configuration
@@ -131,7 +130,7 @@ Likewise, you can configure the home page's title, subtitle and icon in the `_co
 # Index Page
 index_banner_text: Welcome to Anodyne
 index_banner_text_secondary: Create Websites. Make Magic.
-index_font_awesome_icon_css: fa-magic
+index_icon_css: magic
 ```
 
 ### Archive Date Format
@@ -173,13 +172,9 @@ Example:
 # Social Accounts
 social_platforms:
   - url: https://twitter.com/?lang=en
-    fa_icon: fa-twitter
-  - url: https://www.facebook.com/
-    fa_icon: fa-facebook
-  - url: https://dribbble.com/
-    fa_icon: fa-dribbble 
+    icon: twitter
   - url: https://github.com/klugjo/hexo-theme-anodyne
-    fa_icon: fa-github
+    icon: github
 ```
 
 ## Creator

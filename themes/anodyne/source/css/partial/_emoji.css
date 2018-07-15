@@ -1,0 +1,74 @@
+/* emoji / ascii icons */
+.ec{
+    display: inline-block;
+    text-rendering: auto;
+    font-style:normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ec:before {
+    box-sizing: border-box;
+}
+
+.ec-folder-open:before{
+    content: '📂';
+}
+.ec-resume:before{
+    content: '📜';
+}
+.ec-handshake:before{
+    content: '🤝';
+}
+.ec-share:before {
+    content: '📯';
+}
+.ec-magic:before {
+    content: '🧙'‍;
+}
+.ec-fire:before {
+    content: '🔥';
+}
+.ec-fast-forward:before {
+    content: '⏩';
+}
+.ec-bomb:before {
+    content: '💣';
+}
+.ec-comment:before {
+    content: '💬';
+}
+.ec-picture:before {
+    content: '🖼️';
+}
+.ec-globe:before {
+    content: '🌍';
+}
+.ec-forbidden:before {
+    content: '🚫';
+}
+.ec-arrow-up:before {
+    content: '️️️️⬆️';
+}
+.ec-plus:before {
+    content: '➕';
+}
+.ec-gear:before {
+    content: '️️⚙️';
+}
+.ec-thumbs-up:before {
+    content: '️️👍';
+}
+.ec-thumbs-down:before {
+    content: '️️👎';
+}
+.ec-chevron-left:before {
+    content: '️️◀';
+}
+.ec-chevron-right:before {
+    content: '️️▶';
+}
+.ec-tag:before{
+   content: '🏷️';
+}

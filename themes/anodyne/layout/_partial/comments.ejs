@@ -3,7 +3,7 @@
     <% theme.social_platforms.forEach(function(platform) { %>
         <% if (['twitter', 'github', 'linkedin'].indexOf(platform.type) >= 0 ) { %>
             <% if (first){ %>
-                <i class="fa fa-share-alt pr3 text-main-color"></i>Comment on
+                <i class="ec ec-share pr2 text-main-color"></i>Comment on
             <% first=false; } %>
             <div class="dib mh3">
                 <%
@@ -19,8 +19,7 @@
                         url = "https://www.linkedin.com/shareArticle?mini=true&url=" + encodeURI(page.permalink)
                         break;
                 } %>
-                <a class="fw3 ph1" href="<%= url %>" target="_blank" rel="noopener noreferrer">
-                    <i class="fa <%= platform.fa_icon %>"></i>
+                <a class="fw3 ph1 ic ic-share ic-<%= platform.icon %>" href="<%= url %>" target="_blank" rel="noopener noreferrer">
                     <%= platform.type %>
                 </a>
             </div>

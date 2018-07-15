@@ -1,6 +1,6 @@
 # Index Page
 index_banner_text: Thomas Piart
-index_font_awesome_icon_css: fa-handshake-o
+index_icon_css: handshake
 
 # Header
 menu:
@@ -10,11 +10,11 @@ menu:
   
 # Post
 default_post_title: Untitled
-default_post_icon: fa-file-text-o
+default_post_icon: magic
 
 # Archive Date Format
 archive_date_format: MMM YYYY
-archive_font_awesome_icon_css: fa-folder-open
+archive_icon_css: folder-open
 
 twitter_handle: '@tomap'
 
@@ -29,15 +29,15 @@ twitter_handle: '@tomap'
 # Social Media Platforms
 social_platforms:
   - url: https://stackoverflow.com/users/383029/tomap
-    fa_icon: fa-stack-overflow
+    icon: stackoverflow
   - url: https://github.com/tomap/
-    fa_icon: fa-github
+    icon: github
     type: github
     repository: tpi2.eu
   - url: https://linkedin.com/in/thomaspiart
-    fa_icon: fa-linkedin
+    icon: linkedin
     type: linkedin
   - url: https://twitter.com/tomap
-    fa_icon: fa-twitter
+    icon: twitter
     type: twitter
     account: tomap
