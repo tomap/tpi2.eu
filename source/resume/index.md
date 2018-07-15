@@ -5,10 +5,18 @@ layout: page
 pdf: "Thomas_Piart_Resume"
 ---
 ## Experience ##
+### Vente-Privee ###
+French ecommerce company, pioneer in online flash sales of designer brands.
+
+#### IT Lead Software Developer | Feb 2018 to present ####
+- Specify, Develop & Test for an API Gateway
+  - .Net Core
+  - Couchbase, AMQ, Docker, Rancher, GitLab CI, ...
+
 ### Enablon ###
 Leading software vendor on Sustainability, EH&S and Risk management.
 
-#### R&D Architect | Feb 2014 to Present ####
+#### R&D Architect | Feb 2014 to Feb 2018 ####
 - Software Architecture (analyze, prototype, test & develop) 
   - Mockup & prototype development 
   - Refactoring legacy code when necessary
@@ -18,7 +26,7 @@ Leading software vendor on Sustainability, EH&S and Risk management.
   - Develop integration middleware between internal apps & VSTS (.Net async)
 - Resolve complex requests
   - Develop embedded diagnostic tools (Web, .Net, Performance, ...) 
-  - Performance issues (web, database, network, .Net optimisation, ...)  
+  - Performance issues (web, database, network, .Net optimization, ...)  
 - Participate in sales to win prospects
   - Develop prototypes for sales under time constraints
 
@@ -44,13 +52,13 @@ Responsible of the development of the reporting tool and the web interface & Scr
 ### Chantier Allais ###
 Naval Shipyard in Dieppe (France)
 
-#### R&D Engineer | Jan ####
-Confidential study arround the following topics :
+#### R&D Engineer | Jan 2004 ####
+Confidential study around the following topics :
 - Modeling poly articulated and hydraulic systems using Bond Graphs 
 - Real Time Systems (RTAI), Hydraulic & Mechanics
 
 ## Education ##
-- 2015+ : Pluralsight (C#, Refactoring, Design Patterns, VSTS, ALM, TDD, ...)
+- 2015+ : Pluralsight (C#, Refactoring, Design Patterns, VSTS, ALM, TDD, DDD, ...)
 - 2013 : Certified Scrum Master
 - 1999 - 2004 : ESIEE Paris - École Supérieur d'Ingénieurs en Électronique et Électrotechnique
   Graduated in 2004, specialized in embedded system
@@ -69,7 +77,7 @@ OS :
 - Windows & Unix/Linux (Debian, Ubuntu, RTAI) 
 
 IDE :
-- Visual Studio (C#, VB, VC++) 
+- Visual Studio (C#, VB, VC++)
 
 Other :
 - Git, Svn, Cvs, Apache httpd, Ant, IIS, MatLab/Simulink (SimMechanics), Scilab, Octave, Mathematica 
@@ -78,9 +86,10 @@ Other :
 French : Native language
 English : Good level, used professionally for the past 10 years. TOEFL : 590 points (Dec 2002) 
 Italian : Good level, 1 to 2 months stay every year 
+Romanian: Beginner
 German : Beginner (3 months stay in 2003)
 ## Various ##
 Sports : Rock climbing (8 years)
 Sailing with crew : Training at Les Glénans (level : "3 voiles"), participated to "Spi Dauphine" Sailing Race in 2003 and 2004 (Sailing Race of 10 days on the mediterranean sea) 
-Activity : Scouting : cared of children between 8 and 12 years old
+Activity : Scouting : cared for children between 8 and 12 years old
 Interest for AI, drawing and astronomy.
