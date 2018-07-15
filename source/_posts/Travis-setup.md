@@ -2,7 +2,7 @@
 ---
 date : 2017-04-24
 title : Travis CI Setup attempt
-icon: fa-thumbs-down
+icon: thumbs-down
 tags: ["travis", "github"]
 ---
 

@@ -2,7 +2,7 @@
 title: Flickr restored
 tags: ["flickr"]
 date: 2017-02-26
-icon: fa-picture-o
+icon: picture
 ---
 I restored Flickr images on my site:
 {% flickr 32865582372 %}

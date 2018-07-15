@@ -1,6 +1,6 @@
 ---
 title : Thomas Piart - Resume
-icon: fa-list
+icon: resume
 layout: page
 pdf: "Thomas_Piart_Resume"
 ---

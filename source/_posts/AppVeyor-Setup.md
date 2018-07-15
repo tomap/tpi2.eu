@@ -1,8 +1,8 @@
 ---
 date : 2017-02-19
 title : AppVeyor Setup
-icon: fa-step-forward
-tags: ["appveyor", "github", ""]
+icon: fast-forward
+tags: ["appveyor", "github"]
 ---
 I just configured AppVeyor Continuous Deployment.
 

@@ -1,7 +1,8 @@
 ---
 title: This is my first news on this site
 date: 2013-01-20T11:11:11
-icon: fa-bomb
+icon: bomb
+tags: ["site"]
 ---
 
 This is my first post...

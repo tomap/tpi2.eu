@@ -1,7 +1,7 @@
 ---
 date : 2017-12-20
 title : Testing Firebase hosting
-icon: fa-fire
+icon: fire
 tags: ["firebase", "hosting", "hexo", "travis"]
 ---
 

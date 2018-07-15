@@ -2,7 +2,7 @@
 title: CoffeeScript, Comments, DocPad, ...
 tags: ["setup","progress","site"]
 date: 2013-01-31
-icon: fa-comments
+icon: comment
 ---
 
 Thanks to DocPad, I'm learning new languages:

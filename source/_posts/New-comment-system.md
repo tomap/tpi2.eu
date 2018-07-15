@@ -1,7 +1,7 @@
 ---
 date: 2018-01-12
 title: New Comment System
-icon: fa-share-alt
+icon: comment
 tags: ["comment", "disqus", "github", "linkedin", "twitter"]
 ---
 
