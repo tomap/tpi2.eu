@@ -64,7 +64,7 @@ Example:
 title: Welcome to Anodyne
 tags: ["ThisIsATag", "Intro", "Welcome", "Anodyne"]
 categories: ["Configuration", "Hexo"]
-icon: handshake
+icon: 🤝
 ---
 ```
 

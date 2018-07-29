@@ -1,7 +1,7 @@
 ---
 date : 2017-12-18
 title : Site improvements
-icon: arrow-up
+icon: ⬆
 tags: ["hexo", "nodejs", "security"]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title : Thomas Piart - Resume
-icon: resume
+icon: 📜
 layout: page
 pdf: "Thomas_Piart_Resume"
 ---

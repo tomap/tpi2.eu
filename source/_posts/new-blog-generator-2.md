@@ -1,7 +1,7 @@
 ---
 date : 2017-02-10
 title : New site generator (take 2)
-icon: plus
+icon: ➕
 tags: ["hexo", "static", "nodejs"]
 ---
 After trying Hugo, I tried [Hexo](https://hexo.io).

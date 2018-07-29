@@ -15,7 +15,7 @@ Here is a quick list of the icons I use and their unicode equivalent:
 * https://fontawesome.com/v4.7.0/icon/bomb : 💣 or 💥 (100%)
 * https://fontawesome.com/v4.7.0/icon/folder-open : 📂 or 🗁 (100%)
 * https://fontawesome.com/v4.7.0/icon/list : 📇 or 📜 or 🗒️ or 📝 (90%)
-* https://fontawesome.com/v4.7.0/icon/picture-o : 🖼️ (100%)
+* https://fontawesome.com/v4.7.0/icon/picture-o : 🖼️ or 🖼 (looks bad in monospace font, but ok in sans-serif) (100%)
 * https://fontawesome.com/v4.7.0/icon/flickr : see picture-o or brands below
 
 Brands (in base64 from font-awesome 5):

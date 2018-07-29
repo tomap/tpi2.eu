@@ -22,4 +22,4 @@ This website was created with [Hexo](https://hexo.io) and uses a modified versio
 
 Unless stated otherwise, all content is licensed under the [Creative Commons Attribution License](https://creativecommons.org/licenses/by/4.0/ "Visit Website") and code licensed under the [MIT License](https://opensource.org/licenses/mit-license.php "Visit Website"), © [Thomas Piart](https://tpî.eu "Visit Website")
 
-Brand Icons (Github, Twitter, ...) are from [FontAwesome](https://fontawesome.com/) under [Creative Commons Attribution License](https://creativecommons.org/licenses/by/4.0/).
+Brand Icons (Github, Twitter, ...) are from [Simple Icons](https://simpleicons.org/) under [Creative Commons Zero](https://creativecommons.org/publicdomain/zero/1.0/legalcode).

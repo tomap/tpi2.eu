@@ -2,7 +2,7 @@
 title: My progress in setting this site up
 tags: ["setup","progress","site"]
 date: 2013-01-26
-icon: gear
+icon: ⚙
 ---
 
 I'm making some progress.

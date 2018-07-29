@@ -13,63 +13,66 @@
     box-sizing: border-box;
 }
 
-.ec-folder-open:before{
+.ec-📂:before{
     content: '📂';
 }
-.ec-resume:before{
+.ec-📜:before{
     content: '📜';
 }
-.ec-handshake:before{
+.ec-🤝:before{
     content: '🤝';
 }
-.ec-share:before {
+.ec-📯:before {
     content: '📯';
 }
-.ec-magic:before {
+.ec-🧙:before {
     content: '🧙'‍;
 }
-.ec-fire:before {
+.ec-🔥:before {
     content: '🔥';
 }
-.ec-fast-forward:before {
+.ec-⏩:before {
     content: '⏩';
 }
-.ec-bomb:before {
+.ec-💣:before {
     content: '💣';
 }
-.ec-comment:before {
+.ec-💬:before {
     content: '💬';
 }
-.ec-picture:before {
-    content: '🖼️';
+.ec-🖼:before {
+    content: '🖼';
 }
-.ec-globe:before {
+.ec-🌍:before {
     content: '🌍';
 }
-.ec-forbidden:before {
+.ec-🚫:before {
     content: '🚫';
 }
-.ec-arrow-up:before {
-    content: '️️️️⬆️';
+.ec-⬆:before {
+    content: '⬆';
 }
-.ec-plus:before {
+.ec-➕:before {
     content: '➕';
 }
-.ec-gear:before {
-    content: '️️⚙️';
+.ec-⚙:before {
+    content: '⚙';
 }
-.ec-thumbs-up:before {
-    content: '️️👍';
+.ec-👍:before {
+    content: '👍';
 }
-.ec-thumbs-down:before {
-    content: '️️👎';
+.ec-👎:before {
+    content: '👎';
 }
-.ec-chevron-left:before {
-    content: '️️◀';
+.ec-◀:before {
+    content: '◀';
 }
-.ec-chevron-right:before {
-    content: '️️▶';
+.ec-▶:before {
+    content: '▶';
 }
-.ec-tag:before{
-   content: '🏷️';
+.ec-🔖:before{
+    content: '🔖';
+}
+.ec-😊:before{
+    content: '😊';
 }

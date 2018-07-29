@@ -1,7 +1,7 @@
 ---
 date : 2017-02-19
 title : AppVeyor Setup
-icon: fast-forward
+icon: ⏩
 tags: ["appveyor", "github"]
 ---
 I just configured AppVeyor Continuous Deployment.

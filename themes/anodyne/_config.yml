@@ -1,6 +1,6 @@
 # Index Page
 index_banner_text: Thomas Piart
-index_icon_css: handshake
+index_icon_css: 🤝
 
 # Header
 menu:
@@ -10,11 +10,11 @@ menu:
   
 # Post
 default_post_title: Untitled
-default_post_icon: magic
+default_post_icon: 🧙
 
 # Archive Date Format
 archive_date_format: MMM YYYY
-archive_icon_css: folder-open
+archive_icon_css: 📂
 
 twitter_handle: '@tomap'
 

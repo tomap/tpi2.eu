@@ -1,7 +1,7 @@
 ---
 date : 2017-02-05
 title : New site generator (take 1)
-icon: forbidden
+icon: 🚫
 tags: ["hugo", "static", "go"]
 ---
 I was trying to change the site generator to something simpler and that would also support including images hosted elsewhere.
