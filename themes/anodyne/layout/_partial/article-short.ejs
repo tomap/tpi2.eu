@@ -17,7 +17,6 @@
         <% if (item.tags && item.tags.length) {
             var tags = [];
             item.tags.forEach(function(tag) {
-                <!-- Need to use JS to handle link click to avoid display issues. Best to put here than outer div for SEO. -->
                 tags.push('<a class="fw3 ph1 dib glow o-80" href="' + config.root + tag.path + '">#' + tag.name + '</a>');
             });
         %>
