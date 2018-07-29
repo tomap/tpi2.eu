@@ -19,7 +19,7 @@
     "hexo-uncss": "git+https://github.com/tomap/hexo-uncss.git"
   },
   "devDependencies": {
-    "tachyons": "^4.10.0",
+    "tachyons": "^4.11.1",
     "hexo-server": "^0.3.2"
   },
   "engines": {
