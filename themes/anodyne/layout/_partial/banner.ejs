@@ -1,12 +1,11 @@
 <!-- Banner -->
-<div class="w-100 bg-1 ph5-ns ph3 text-light">
+<header class="w-100 bg-1 ph5-ns ph3 text-light">
     
     <nav class="db dt-l w-100 mw8 center border-box pv3">
         <div class="db dtc-l v-mid w-100 w-75-l tc tr-l">
             <% for (var i in theme.menu) { %>
                 <a class="link dim f6 f5-l dib mr3 mr4-l white" 
-                    href="<%- url_for(theme.menu[i]) %>" 
-                    title="<%= i %>">
+                    href="<%- url_for(theme.menu[i]) %>"
                     <%= i %>
                 </a>
             <% } %>
@@ -24,4 +23,4 @@
     <div class="relative w-100 mw8 center dn dn-m db-ns">
         <i class="absolute right-2 bottom-0 ma1 f-6 ec ec-<%- iconCss %>"></i>
     </div>
-</div>
+</header>
