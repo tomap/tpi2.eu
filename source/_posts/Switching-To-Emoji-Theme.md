@@ -12,7 +12,7 @@ FA icons were of great service, but I was only using few of them, and it was nee
 The latency was caused by the fact that the font needed to be loaded after the CSS was loaded, and the bandwidth usage was caused by the weight of the font file. See [the .woff2 file for example](https://github.com/tomap/tpi2.eu/blob/975f9a247fff11d360085b0ef971f88e01f889df/themes/anodyne/source/fonts/fontawesome-webfont.woff2): 72KB.
 
 For the CSS and font files, I had two possibilities:
-* either reference them from a CDN, and hope that they were already cached by the client. If not, the client had to download the font + the full CSS (31KB or 7KB gziped)
+* either reference them from a CDN, and hope that they were already cached by the client. If not, the client had to download the font + the full CSS (31KB or 7KB gzipped)
 * or embed them in the site, and by using [uncss](https://github.com/uncss/uncss) be able to strip down the CSS for the icons I was not using. Only a few bytes.
 
 I experimented both, and ended up using the 2nd option: embedding FontAwesome to leverage uncss with hexo-uncss.
@@ -23,7 +23,7 @@ I made a map [FA <> Emoji](https://github.com/tomap/tpi2.eu/blob/0fe8e130dffd87a
 
 Here are the technical changes I made to do that:
 
-# Emojis
+## Emojis
 
 I used emojis for pages & posts titles and for the "tags" & "share" icons (see at the bottom of the page).
 
@@ -39,6 +39,9 @@ icon: 🔥
 This will the reference the css `.ec-🔥` which will display the icon as a `content: '🔥'`
 
 I also had to change the open graph image used when sharing to Twitter or LinkedIn. For the, I found this service https://i❤️.ws/emoji-image/🔥.png which provides a png from an emoji. See [the article on Medium](https://medium.com/@Emoji_Domains/free-emoji-image-generator-api-c0b7eaefa586) for more explanation.
+
+By default, emoji are displayed with colors, see the fire or smiley 🔥 😊.
+In order to keep something closer to FA, I applied a `filter: sepia(90%);` which gave them a nicer render.
 
 # Brands
 
