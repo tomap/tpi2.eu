@@ -6,15 +6,7 @@
     }
 
     var postList = [];
-    if (page.category) {
-        site.categories.forEach(function(item) {
-            if(item.name === page.category) {
-                postList = item.posts.slice();
-            }
-        });
-        title = page.category;
-    }
-    else if (page.tag) {
+    if (page.tag) {
         site.tags.forEach(function(item) {
             if(item.name === page.tag) {
                 postList = item.posts;
@@ -29,8 +21,7 @@
 <!-- Banner -->
 <%- partial('_partial/banner.ejs', {
     mainText: title,
-    secondaryText: '',
-    iconCss: theme.archive_icon_css
+    icon: theme.archive_icon || '📂'
 }) %>
 
 <div class="w-100 ph2 ph4-m ph5-l mv5 mv6-l">

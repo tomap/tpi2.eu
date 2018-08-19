@@ -1,8 +1,7 @@
 <!-- Banner -->
 <%- partial('_partial/banner.ejs', {
-    mainText: theme.index_banner_text,
-    secondaryText: theme.index_banner_text_secondary,
-    iconCss: theme.index_icon_css
+    mainText: theme.index_banner_text || config.author,
+    icon: theme.index_icon
 }) %>
 
 <!-- Content -->

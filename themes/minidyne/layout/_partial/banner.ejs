@@ -3,9 +3,10 @@
     
     <nav class="db dt-l w-100 mw8 center border-box pv3">
         <div class="db dtc-l v-mid w-100 w-75-l tc tr-l">
-            <% for (var i in theme.menu) { %>
+            <% var menu = (theme.menu || config.menu) %>
+            <% for (var i in menu) { %>
                 <a class="link dim f6 f5-l dib mr3 mr4-l white" 
-                    href="<%- url_for(theme.menu[i]) %>">
+                    href="<%- url_for(menu[i]) %>">
                     <%= i %>
                 </a>
             <% } %>
@@ -21,6 +22,6 @@
 
     <!-- Icon -->
     <div class="relative w-100 mw8 center dn dn-m db-ns">
-        <i class="absolute right-2 bottom-0 ma1 f-6 ec ec-<%- iconCss %>"></i>
+        <i class="absolute right-2 bottom-0 ma1 f-6 ec ec-<%- icon %>"></i>
     </div>
 </header>

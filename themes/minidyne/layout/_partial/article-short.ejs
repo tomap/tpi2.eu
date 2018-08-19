@@ -6,10 +6,10 @@
                 <% if(item.date) { %>
                     <div class="f5 fw3 lh-copy pr4"><%= item.date.format(config.date_format) %></div> 
                 <% } %>
-                <span class="f3 fw3 lh-copy"><%- item.title || theme.default_post_title || __('default_post_title') %></span>
+                <span class="f3 fw3 lh-copy"><%- item.title || __('default_post_title') %></span>
             </div>
             <div class="dtc v-mid w-10 f1 black-70 tc">
-                <i class="ec ec-<%- item.icon || theme.default_post_icon %>"></i>
+                <i class="ec ec-<%- item.icon || theme.default_post_icon || '🧙' %>"></i>
             </div>
         </div>
     </a>

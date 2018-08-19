@@ -1,32 +1,12 @@
 # Index Page
-index_banner_text: Thomas Piart
-index_icon_css: 🤝
-
-# Header
-menu:
-  Home: /
-  Archives: /archives/
-  Resume: /resume/
-  
-# Post
-default_post_title: Untitled
-default_post_icon: 🧙
+index_icon: 🤝
 
 # Archive Date Format
 archive_date_format: MMM YYYY
-archive_icon_css: 📂
 
 twitter_handle: '@tomap'
 
-# Comments.
-# comments:
-  # Disqus comments
-  # disqus_shortname: tpii
-
-# Google Analytics Tracking ID
-# google_analytics:
-
-# Social Media Platforms
+# Social Media Platforms, also used for comments
 social_platforms:
   - url: https://stackoverflow.com/users/383029/tomap
     icon: stackoverflow

@@ -44,13 +44,11 @@
         <meta property="og:type" content="website" />
     <% } %>
 
-    <!--Page Cover-->
-    <% if (page.icon || theme.default_post_icon){ %>
-        <meta property="og:image" content="https://i❤️.ws/emoji-image/<%= (page.icon || theme.default_post_icon) %>.png" />
-    <% } else if (page.share_cover) { %>
+    <!--Page Cover for sharing-->
+    <% if (page.share_cover) { %>
         <meta property="og:image" content="<%= config.url %><%= page.share_cover %>" />
-    <% } else if (config.cover) { %>
-        <meta property="og:image" content="<%= config.url %><%= config.cover %>"/>
+    <% } else { %>
+        <meta property="og:image" content="https://i❤️.ws/emoji-image/<%= (page.icon || theme.default_post_icon || '🧙') %>.png" />
     <% } %>
 
     <!-- Page permalink -->
@@ -68,7 +66,6 @@
         var title = [];
         if (page.current > 1) title.push(__('page', page.current));
         if (page.title) title.push(page.title);
-        if (page.category) title.push(page.category);
         if (page.tag) title.push(page.tag);
         if (page.archive) {
             if (page.year) title.push(__('archive_b', page.year + (page.month ? '/' + page.month : '')));

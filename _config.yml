@@ -31,14 +31,15 @@ per_page: 5
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
+
 flickr_api_key: 78501c2c12bff9c7a22c013d5155045a
 ## Themes: https://hexo.io/themes/
-theme: anodyne
+theme: minidyne
 
 menu:
   Home: /
-  Archives: /archives
-  About: /about.html
+  Archives: /archives/
+  Resume: /resume/
 
 hfc_favicons:
   enable: false
