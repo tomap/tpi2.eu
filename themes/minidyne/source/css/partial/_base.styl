@@ -19,13 +19,18 @@
     nav, footer 
       display none !important
 
-.ec.ec-mono
-    color transparent
-    text-shadow 0 0 0 $main-color
-    filter none
-
 @media screen and (min-width: 60em) {
   .pr7p-l {
       padding-right: 11rem;
   }
 }
+
+/* emoji / ascii icons */
+.ec
+    -moz-osx-font-smoothing grayscale
+    filter sepia(90%)
+
+    &.ec-mono
+      color transparent
+      text-shadow 0 0 0 $main-color
+      filter none

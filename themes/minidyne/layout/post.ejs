@@ -1,7 +1,6 @@
 <!-- Banner -->
 <%- partial('_partial/banner.ejs', {
-    mainText: (page.title || __('default_post_title')) 
-            + (page.date ? ' - ' + page.date.format(config.date_format) : ''),
+    mainText: page.title || __('default_post_title'),
     icon: page.icon || theme.default_post_icon || '🧙'
 }) %>
 
@@ -20,18 +19,23 @@
                     %>
                         <div class="tags-container-vertical">
                             <div class="tags-sub-container">
-                                <%- tags.join(' ') %>
+                                <span class="ec ec-mono pr2">🔖</span><%- tags.join(' ') %>
                             </div>
                         </div>
                     <% } %>
 
                     <!-- Main Post Content -->
                     <%- page.content %>
-                    
+
+                    <% if (page.date) { %>
+                        <div class="pt3">
+                            <span class="ec ec-mono pr2">🕗</span><%- page.date.format(config.date_format) %>
+                        </div>
+                    <% } %>
                     <!-- Tags Bottom -->
                     <% if (page.tags && page.tags.length) { %>
                         <div class="tags-container-bottom">
-                            <i class="ec ec-🔖 ec-mono pr2"></i><%- tags.join(' ') %>
+                            <span class="ec ec-mono pr2">🔖</span><%- tags.join(' ') %>
                         </div>
                     <% } %>
 
