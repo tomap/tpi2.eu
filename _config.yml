@@ -41,8 +41,13 @@ menu:
   Archives: /archives/
   Resume: /resume/
 
-hfc_favicons:
-  enable: false
-
 uncss:
-  priority : 12
+  priority : 12html_minifier:
+
+html_minifier:
+  removeComments: true
+  collapseWhitespace: true
+  collapseBooleanAttributes: true
+  removeEmptyAttributes: true
+  removeScriptTypeAttributes: true
+  removeStyleLinkTypeAttributes: true

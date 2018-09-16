@@ -7,7 +7,8 @@
   },
   "dependencies": {
     "hexo": "^3.7.1",
-    "hexo-filter-cleanup": "^1.1.0",
+    "hexo-html-minifier": "git+https://github.com/tomap/hexo-html-minifier.git",
+    "hexo-clean-css": "git+https://github.com/tomap/hexo-clean-css.git",
     "hexo-generator-archive": "^0.1.5",
     "hexo-generator-index": "^0.2.1",
     "hexo-generator-tag": "^0.2.0",
@@ -19,7 +20,7 @@
   },
   "devDependencies": {
     "tachyons": "^4.11.1",
-    "hexo-server": "^0.3.2"
+    "hexo-server": "^0.3.3"
   },
   "engines": {
     "node": ">= 8"
