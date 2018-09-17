@@ -42,7 +42,7 @@ menu:
   Resume: /resume/
 
 uncss:
-  priority : 12html_minifier:
+  priority : 12
 
 html_minifier:
   removeComments: true
