@@ -13,6 +13,7 @@ install:
 - npm install
 script:
 - hexo generate
+- rm public/robots.txt
 deploy:
   skip_cleanup: true
   provider: firebase
