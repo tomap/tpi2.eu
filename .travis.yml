@@ -14,6 +14,7 @@ install:
 script:
 - hexo generate
 - rm public/robots.txt
+- mv public/assets/404.html public/404.html
 deploy:
   skip_cleanup: true
   provider: firebase
