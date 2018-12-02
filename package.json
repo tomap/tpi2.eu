@@ -3,11 +3,11 @@
   "version": "0.0.4",
   "private": true,
   "hexo": {
-    "version": "3.7.1"
+    "version": "3.8.0"
   },
   "dependencies": {
-    "hexo": "^3.7.1",
-    "hexo-html-minifier": "git+https://github.com/tomap/hexo-html-minifier.git",
+    "hexo": "^3.8.0",
+    "hexo-html-minifier": "0.0.2",
     "hexo-clean-css": "git+https://github.com/tomap/hexo-clean-css.git",
     "hexo-generator-archive": "^0.1.5",
     "hexo-generator-index": "^0.2.1",
