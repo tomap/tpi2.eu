@@ -8,9 +8,9 @@ pdf: "Thomas_Piart_Resume"
 ### Vente-Privee ###
 French ecommerce company, pioneer in online flash sales of designer brands.
 
-#### IT Lead Software Developer | Feb 2018 to present ####
+#### IT Senior Software Developer | Feb 2018 to present ####
 - Specify, Develop & Test for an API Gateway
-  - .Net Core
+  - .Net Core Microservices
   - Couchbase, AMQ, Docker, Rancher, GitLab CI, ...
 
 ### Enablon ###
