@@ -16,7 +16,7 @@
     "hexo-renderer-marked": "^0.3.2",
     "hexo-renderer-stylus": "^0.3.3",
     "hexo-tag-flickr": "^0.4.0",
-    "hexo-uncss": "omap/hexo-uncss"
+    "hexo-uncss": "tomap/hexo-uncss"
   },
   "devDependencies": {
     "tachyons": "^4.11.1",
