@@ -40,7 +40,7 @@ I relied on https://rawgit.com/ which converts Git Asset url to urls that can be
       content="https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/30dda99e/black/png/256/<%= (page.icon || theme.default_post_icon).substr(3) %>.png" />
   <% } %>
   ```
-  See https://github.com/tomap/tpi2.eu/blob/master/themes/anodyne/layout/_partial/head.ejs#L48
+  See [https://github.com/tomap/tpi2.eu/blob/master/themes/anodyne/layout/_partial/head.ejs#L48](https://github.com/tomap/tpi2.eu/blob/fd279cc51590975d97e1030bffc836b8db8611dc/themes/anodyne/layout/_partial/head.ejs#L48)
 - `url`: I used [Hexo variable](https://hexo.io/docs/variables.html#Page-Variables) `permalink`:
   ```html
     <!-- Page permalink -->
@@ -58,4 +58,4 @@ To create the url, I used this documentation: https://developer.linkedin.com/doc
 And here is the result:
 {% flickr 38747904405 %}
 
-Then all I had to do was to add those links instead of Disqus comment system. See https://github.com/tomap/tpi2.eu/blob/master/themes/anodyne/layout/_partial/comments.ejs#L3
+Then all I had to do was to add those links instead of Disqus comment system. See [https://github.com/tomap/tpi2.eu/blob/master/themes/anodyne/layout/_partial/comments.ejs#L3](https://github.com/tomap/tpi2.eu/blob/fd279cc51590975d97e1030bffc836b8db8611dc/themes/anodyne/layout/_partial/comments.ejs#L3)
