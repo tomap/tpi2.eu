@@ -5,6 +5,7 @@
 # Site
 title: Thomas Piart - tpî.eu
 author: Thomas Piart
+description: Thomas Piart - tpî.eu - Personal site
 language: en
 
 # URL
@@ -27,18 +28,17 @@ highlight:
   tab_replace:
 
 # Pagination
-per_page: 5
+per_page: 100
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
-
 flickr_api_key: 78501c2c12bff9c7a22c013d5155045a
+
 ## Themes: https://hexo.io/themes/
 theme: minidyne
 
 menu:
   Home: /
-  Archives: /archives/
   Resume: /resume/
 
 uncss:

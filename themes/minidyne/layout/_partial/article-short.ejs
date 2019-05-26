@@ -1,14 +1,14 @@
 <div class="relative-l">
     <a href="<%- url_for(item.path) %>">
         <div class="dt w-100 hover-border-main-color pointer pa3 b--white bl mv4-l">
-            <div class="dtc v-mid w-90 black-70">
+            <div class="dtc v-mid w-100 w-90-ns black-70">
                 
                 <% if(item.date) { %>
                     <div class="f5 fw3 lh-copy pr4"><%= item.date.format(config.date_format) %></div> 
                 <% } %>
                 <span class="f3 fw3 lh-copy"><%- item.title || __('default_post_title') %></span>
             </div>
-            <div class="dtc v-mid w-10 f1 black-70 tc">
+            <div class="v-mid w-10 dn dtc-ns f1 black-70 tc">
                 <span class="ec"><%- item.icon || theme.default_post_icon || '🧙' %></span>
             </div>
         </div>

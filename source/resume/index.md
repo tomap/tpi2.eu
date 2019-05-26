@@ -36,7 +36,7 @@ Responsible of the development of the reporting tool and the web interface & Scr
   - 8 years of development to transform a minor function into a central and major module of Enablon and a sales strength
   - Fully refactor the module with constrains of performances, user experience and design
 - Development of a mathematical toolbox (.Net) :
-  - Simulation (Monte Carlo), forecast and trends, stochastic optimization stochastique, predictive analysis
+  - Simulation (Monte Carlo), forecast and trends, stochastic optimization, predictive analysis
 - Improve the UI to switch to "Web 2.0" UX (ajax/json, interactivity, customization of UI for each user, ...)
 - Manage a scrum team (Agile methodology applied for numerous sprints)
 - Handle technical documentation for consultants and partners
@@ -77,10 +77,10 @@ OS :
 - Windows & Unix/Linux (Debian, Ubuntu, RTAI) 
 
 IDE :
-- Visual Studio (C#, VB, VC++)
+- Visual Studio (C#, VB, C++)
 
 Other :
-- Git, Svn, Cvs, Apache httpd, Ant, IIS, MatLab/Simulink (SimMechanics), Scilab, Octave, Mathematica 
+- Git, Bash, Svn, Cvs, Apache httpd, Ant, IIS, MatLab/Simulink (SimMechanics), Scilab, Octave, Mathematica 
  
 ### Language ###
 French : Native language
@@ -88,6 +88,7 @@ English : Good level, used professionally for the past 10 years. TOEFL : 590 poi
 Italian : Good level, 1 to 2 months stay every year 
 Romanian: Beginner
 German : Beginner (3 months stay in 2003)
+
 ## Various ##
 Sports : Rock climbing (8 years)
 Sailing with crew : Training at Les Glénans (level : "3 voiles"), participated to "Spi Dauphine" Sailing Race in 2003 and 2004 (Sailing Race of 10 days on the mediterranean sea) 

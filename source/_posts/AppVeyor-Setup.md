@@ -23,7 +23,7 @@ public\**\*
 
 Then I went to Deploy, choose FTP deployment. And that when issues started :(
 
-FTP is always something messy. Active or not. FTP, SFTP or FTPS. I tried them all without success. Then start googleing and although my issue was not exactly the same, I tried the suggestion from [AppVeyor Support Forum](https://help.appveyor.com/discussions/problems/3236-cant-deploy-via-ftp-because-of-error-message-450) and guess what, it worked! The solution was to enable a "Beta FTP" option, ... of course. 
+FTP is always something messy. Active or not. FTP, SFTP or FTPS. I tried them all without success. Then start googling and although my issue was not exactly the same, I tried the suggestion from [AppVeyor Support Forum](https://help.appveyor.com/discussions/problems/3236-cant-deploy-via-ftp-because-of-error-message-450) and guess what, it worked! The solution was to enable a "Beta FTP" option, ... of course. 
 
 Well, at first, I wanted to use SFTP (you know, for security, ...), which is supposed to be enabled on my OVH account, but it did not work. So that's for another day.
 
