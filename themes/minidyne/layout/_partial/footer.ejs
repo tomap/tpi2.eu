@@ -1,6 +1,9 @@
 <footer class="bg-1 ph2 ph5-ns pv5 center tc">
     <% theme.social_platforms.forEach(function(platform) { %>
-        <a class="dib mh3 glow o-70" href="<%- platform.url %>" target="_blank" rel="noopener noreferrer">
+        <a class="dib mh3 glow o-70"
+            href="<%- platform.url %>"
+            title="My <%- platform.name %>'s Profile" 
+            target="_blank" rel="noopener noreferrer">
             <i class="ic ic-<%- platform.icon %>"></i>
         </a>
     <% }) %>

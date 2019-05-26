@@ -1,6 +1,13 @@
+<%
+    var title = config.author;
+    
+    if (page.tag) {
+        title = "#" + page.tag;
+    }
+%>
 <!-- Banner -->
 <%- partial('_partial/banner.ejs', {
-    mainText: theme.index_banner_text || config.author,
+    mainText: title,
     icon: theme.index_icon
 }) %>
 

@@ -10,14 +10,18 @@ twitter_handle: '@tomap'
 social_platforms:
   - url: https://stackoverflow.com/users/383029/tomap
     icon: stackoverflow
+    name: StackOverflow
   - url: https://github.com/tomap/
     icon: github
     type: github
+    name: GitHub
     repository: tpi2.eu
   - url: https://linkedin.com/in/thomaspiart
     icon: linkedin
     type: linkedin
+    name: LinkedIn
   - url: https://twitter.com/tomap
     icon: twitter
     type: twitter
+    name: Twitter
     account: tomap
