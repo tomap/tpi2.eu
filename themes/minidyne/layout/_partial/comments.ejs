@@ -3,26 +3,25 @@
     <% theme.social_platforms.forEach(function(platform) { %>
         <% if (['twitter', 'github', 'linkedin'].indexOf(platform.type) >= 0 ) { %>
             <% if (first){ %>
-                <span class="ec ec-mono pr2">💬</span>Comment on
+                <span class="ec ec-mono pr2">💬</span><span class="mr2">Comment on</span>
             <% first=false; } %>
-            <div class="dib mh3">
-                <%
-                var url = platform.url
-                switch(platform.type){
-                    case 'github':
-                        url += platform.repository + '/issues/new?labels=comment&title=' + encodeURI(page.title) + '&body=' + encodeURI('\n\nUrl: ' + page.permalink)
-                        break;
-                    case 'twitter':
-                        url = "https://twitter.com/intent/tweet?url=" + encodeURI(page.permalink) + '&via=' + platform.account
-                        break;
-                    case 'linkedin':
-                        url = "https://www.linkedin.com/shareArticle?mini=true&url=" + encodeURI(page.permalink)
-                        break;
-                } %>
-                <a class="fw3 ph1 ic ic-share ic-<%= platform.icon %>" href="<%= url %>" target="_blank" rel="noopener noreferrer">
-                    <%= platform.type %>
-                </a>
-            </div>
+            <%
+            var url = platform.url
+            switch(platform.type){
+                case 'github':
+                    url += platform.repository + '/issues/new?labels=comment&title=' + encodeURI(page.title) + '&body=' + encodeURI('\n\nUrl: ' + page.permalink)
+                    break;
+                case 'twitter':
+                    url = "https://twitter.com/intent/tweet?url=" + encodeURI(page.permalink) + '&via=' + platform.account
+                    break;
+                case 'linkedin':
+                    url = "https://www.linkedin.com/shareArticle?mini=true&url=" + encodeURI(page.permalink)
+                    break;
+            } %>
+            <a class="mr3 ic ic-share ic-<%= platform.icon %>" href="<%= url %>" target="_blank" rel="noopener noreferrer">
+                <%= platform.type %>
+            </a>
+        
         <% } %>
     <% }) %>
     </div>
