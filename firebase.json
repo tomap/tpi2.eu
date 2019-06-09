@@ -16,6 +16,14 @@
           } ]
         },
         {
+          "source":"**",
+          "headers": [
+            {"key":"Content-Security-Policy","value":"default-src 'none'; style-src 'self'; img-src *"},
+            {"key":"Referrer-Policy","value":"no-referrer"},
+            {"key":"X-Frame-Options","value":"deny"}
+          ]
+        },
+        {
         "source" : "**/*.@(css)",
         "headers" : [ {
           "key" : "Cache-Control",

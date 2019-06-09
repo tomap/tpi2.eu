@@ -43,7 +43,7 @@ I also had to change the open graph image used when sharing to Twitter or Linked
 By default, emoji are displayed with colors, see the fire or smiley 🔥 😊.
 In order to keep something closer to FA, I applied a `filter: sepia(90%);` which gave them a nicer render.
 
-# Brands
+## Brands
 
 For brands, I used the brand icons from SimpleIcons.org. They have pretty much every brand you can ask for, and if they don't have it, you can [ask for it](https://github.com/simple-icons/simple-icons/issues/625#issuecomment-361242420).
 

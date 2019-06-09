@@ -13,7 +13,7 @@ So I decided to switch to asking reader to comment on third party sites like Twi
 
 So I created links (see bellow this post) to share comments via those sites.
 
-# Github
+## Github
 
 For Github, I could not find an official documentation describing the url format to create an issue with some fields prefilled but I found this: https://github.com/isaacs/github/issues/99 which explains how to prefill the title, body & label:
 ``https://github.com/account/repo/issues/new?labels=mylabel&title=myTitle&body=myBody``
@@ -22,7 +22,7 @@ Note that you can't prefill a random label. The label must b part of the project
 And here is the result:
 {% flickr 24775863397 %}
 
-# Twitter
+## Twitter
 
 For Twitter, there is a nice documentation: https://dev.twitter.com/web/tweet-button/web-intent
 
@@ -49,7 +49,7 @@ I relied on https://rawgit.com/ which converts Git Asset url to urls that can be
     <% } %>
   ```
 
-# LinkenIn
+## LinkedIn
 
 Open Graph tags were also needed for LinkedIn but what already existed in the theme and what I added for Twitter was enough.
 
