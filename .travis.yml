@@ -6,15 +6,10 @@ git:
 branches:
   only:
   - master
-  - /^greenkeeper/.*$/
-before_install:
-- npm install -g hexo-cli
 install:
 - npm install
 script:
-- hexo generate
-- rm public/robots.txt
-- mv public/assets/404.html public/404.html
+- npm run generateTravis
 deploy:
   skip_cleanup: true
   provider: firebase

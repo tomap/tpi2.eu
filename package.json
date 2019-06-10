@@ -25,6 +25,9 @@
     "node": ">= 8"
   },
   "scripts": {
-    "generateCopy": "hexo generate && cp indexing/robots.txt public/robots.txt && cp public/assets/404.html public/404.html && rm public/.htaccess"
+    "generate": "hexo g",
+    "generateTravis": "hexo g && mv public/assets/404.html public/404.html",
+    "generateCopy": "hexo generate && cp indexing/robots.txt public/robots.txt && cp public/assets/404.html public/404.html && rm public/.htaccess",
+    "server": "hexo server -o"
   }
 }

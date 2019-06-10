@@ -11,13 +11,12 @@
 To launch this website:
 - clone this repo
 - run ```npm install```
-- run ```npm -g install hexo-cli```
-- run ```hexo server -o``` (to run locally)
-- run ```hexo generate``` (to generate into Public folder)
+- run ```npm run server``` (to run locally)
+- run ```npm run generate``` (to generate into Public folder)
 
 ## License
 
-This website was created with [Hexo](https://hexo.io) and uses a modified version of [Anodyne Theme](https://github.com/klugjo/hexo-theme-anodyne)
+This website was created with [Hexo](https://hexo.io) and uses a modified version of [Anodyne Theme](https://github.com/klugjo/hexo-theme-anodyne): [Minidyne Theme](https://github.com/tomap/hexo-theme-minidyne)
 
 Unless stated otherwise, all content is licensed under the [Creative Commons Attribution License](https://creativecommons.org/licenses/by/4.0/ "Visit Website") and code licensed under the [MIT License](https://opensource.org/licenses/mit-license.php "Visit Website"), © [Thomas Piart](https://tpî.eu "Visit Website")
 

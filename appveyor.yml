@@ -4,10 +4,8 @@ install:
 build_script:
 - cmd: >-
     npm install
-
-    npm -g install hexo-cli
     
-    hexo generate
+    npm run generate
 
     copy indexing\robots.txt public\robots.txt
     
