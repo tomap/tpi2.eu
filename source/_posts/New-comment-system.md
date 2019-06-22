@@ -26,22 +26,29 @@ And here is the result:
 
 For Twitter, there is a nice documentation: https://dev.twitter.com/web/tweet-button/web-intent
 
-Here is the URL: ``https://twitter.com/intent/tweet?url=https://example.com/myPage&via=tomap`` 
+Here is the URL: ``https://twitter.com/intent/tweet?url=https://example.com/myPage&via=tomap``
 
-And here is the result: 
+And here is the result:
+
+```md
 {% flickr 27866246469 %}
+```
 
 To have a nice "card", I had to add a few missing Open Graph tags:
+
 - `image`: I pointed to the PNG equivalent of the post icon (Font-Awesome) using this repository: https://github.com/encharm/Font-Awesome-SVG-PNG which provides Png equivalent of the Font-Awesome icons.
-I relied on https://rawgit.com/ which converts Git Asset url to urls that can be included in your site: 
+I relied on https://rawgit.com/ which converts Git Asset url to urls that can be included in your site:
+
   ```html
   <% if (page.icon || theme.default_post_icon){ %>
-    <meta property="og:image" 
+    <meta property="og:image"
       content="https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/30dda99e/black/png/256/<%= (page.icon || theme.default_post_icon).substr(3) %>.png" />
   <% } %>
   ```
+
   See [https://github.com/tomap/tpi2.eu/blob/master/themes/anodyne/layout/_partial/head.ejs#L48](https://github.com/tomap/tpi2.eu/blob/fd279cc51590975d97e1030bffc836b8db8611dc/themes/anodyne/layout/_partial/head.ejs#L48)
 - `url`: I used [Hexo variable](https://hexo.io/docs/variables.html#Page-Variables) `permalink`:
+
   ```html
     <!-- Page permalink -->
     <% if (page.permalink){ %>
@@ -53,7 +60,7 @@ I relied on https://rawgit.com/ which converts Git Asset url to urls that can be
 
 Open Graph tags were also needed for LinkedIn but what already existed in the theme and what I added for Twitter was enough.
 
-To create the url, I used this documentation: https://developer.linkedin.com/docs/share-on-linkedin# > Click on "Customized URL" and here is the result: ``https://www.linkedin.com/shareArticle?mini=true&url=https://tpî.eu/2018/01/10/New-comment-system/`` 
+To create the url, I used this documentation: https://developer.linkedin.com/docs/share-on-linkedin# > Click on "Customized URL" and here is the result: ``https://www.linkedin.com/shareArticle?mini=true&url=https://tpî.eu/2018/01/10/New-comment-system/``
 
 And here is the result:
 {% flickr 38747904405 %}
