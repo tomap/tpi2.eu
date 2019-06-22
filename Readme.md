@@ -1,14 +1,15 @@
-# [Thomas Piart's Website](https://tpî.eu), built with [Hexo](https://hexo.io).
+# [Thomas Piart's Website](https://tpî.eu), built with [Hexo](https://hexo.io)
 
 [![Dependency Status](https://david-dm.org/tomap/tpi2.eu.svg)](https://david-dm.org/tomap/tpi2.eu)
 [![Dependency Status](https://david-dm.org/tomap/tpi2.eu/dev-status.svg)](https://david-dm.org/tomap/tpi2.eu?type=dev)
 [![AppVeyor Build status](https://ci.appveyor.com/api/projects/status/amvptl7n6hj3j8i6?svg=true)](https://ci.appveyor.com/project/tomap/tpi2-eu)
 [![Travis-ci Build status](https://travis-ci.org/tomap/tpi2.eu.svg?branch=master)](https://travis-ci.org/tomap/tpi2.eu)
-[ ![Codeship Build Status](https://app.codeship.com/projects/faf92df0-2f86-0136-7ebd-1220cc68bc4e/status?branch=master)](https://app.codeship.com/projects/288400)
+[![Codeship Build Status](https://app.codeship.com/projects/faf92df0-2f86-0136-7ebd-1220cc68bc4e/status?branch=master)](https://app.codeship.com/projects/288400)
 
 ## How To
 
 To launch this website:
+
 - clone this repo
 - run ```npm install```
 - run ```npm run server``` (to run locally)

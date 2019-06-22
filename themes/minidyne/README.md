@@ -1,6 +1,5 @@
 # Welcome to Minidyne, a minimalist hexo theme
 
-
 ![Screenshot of this site](https://hexo-theme-minidyne-demo.netlify.com/screenshot.png)
 
 [Live Demo on Netlify](https://hexo-theme-minidyne-demo.netlify.com/)
@@ -8,21 +7,22 @@
 
 <!-- more -->
 
+This is V2. For V1 of this theme, [head over to V1](https://github.com/tomap/hexo-theme-minidyne/tree/v1)
+
 ## Features Overview
 
 - Responsive
 - Tags Support
+- Accessible colors (at least the default one)
 - Responsive Images
 - Social Accounts configuration
-- Pagination
 - Pages
-- Two languages (French & English)
 - Stylus CSS preprocessor
 - ejs HTML templates
 - Standalone (single css file, no external file) 🥊
-- Static (no js, one single css) 🧱
+- Static (no js, one single css) 🍊
 - Emoji Icons for blog posts ✨
-- SVG for social icons (twitter, stackoverflow, linkedIn 📰)
+- SVG for social icons (Twitter, StackOverflow, LinkedIn 📰)
 
 ## External libraries used
 
@@ -35,8 +35,8 @@
 
 Install the theme by using:
 
-```
-$ git clone https://github.com/tomap/hexo-theme-mindyne themes/minidyne
+```bash
+git clone https://github.com/tomap/hexo-theme-mindyne themes/minidyne
 ```
 
 Then update your blog's main `_config.yml` to set the theme to `minidyne`:
@@ -48,10 +48,10 @@ theme: minidyne
 ```
 
 You'll also need the following hexo plugins for this theme to work.
-Add them in the package.json (they should alread be there, but just in case):
+Add them in the package.json (they should already be there, but just in case):
+
 ```json
 "dependencies": {
-    "hexo-generator-archive": "^0.1.5",
     "hexo-generator-index": "^0.2.1",
     "hexo-generator-tag": "^0.2.0",
     "hexo-renderer-ejs": "^0.3.1",
@@ -59,12 +59,14 @@ Add them in the package.json (they should alread be there, but just in case):
   }
 ```
 
-
 ## Limitations
 
 This theme does not handle
+
 - Categories (so you can drop the default dependency to "hexo-generator-category" )
+- Archives (so you can drop the default dependency to "hexo-generator-archive". If you want archives, head over to [V1](https://github.com/tomap/hexo-theme-minidyne/tree/v1))
 - Images gallery
+- Pagination (if you want pagination, head over to [V1](https://github.com/tomap/hexo-theme-minidyne/tree/v1))
 
 ## Post Configuration
 
@@ -82,6 +84,7 @@ tags: ["ThisIsATag", "Intro", "Welcome", "Minidyne"]
 icon: 🤝
 ---
 ```
+
 Pick one from https://emojipedia.org/
 
 ## Theme Configuration
@@ -96,7 +99,6 @@ The menu is configured in the theme's `_config.yml` or in the root `_config.yml`
 # Header
 menu:
   Home: /
-  Archives: /archives
   About: /about.html
 ```
 
@@ -115,6 +117,7 @@ index_banner_text: Welcome to Minidyne
 # Logo
 index_icon: ❤️
 ```
+
 ### Default post title
 
 The default post title (used when no title is specified) is configured in the theme's translation file in `/themes/minidyne/languages`.
@@ -131,15 +134,6 @@ The default post icon (used when no icon is specified) is configured in the them
 default_post_icon: 🧙
 ```
 
-### Archive Date Format
-
-You can change the date format for the archive page if you so desire
-
-``` yaml
-# Archive Date Format
-archive_date_format: MMM YYYY
-```
-
 ### Social Account
 
 Setup the links to your social pages in the theme's `_config.yml` as an array of objects. Links are in the footer.
@@ -154,13 +148,16 @@ social_platforms:
   - url: https://github.com/johndoe/
     icon: github
     type: github
+    name: GitHub
     repository: johndoe.blog
   - url: https://linkedin.com/in/johndoe
     icon: linkedin
     type: linkedin
+    name: LinkedIn
   - url: https://twitter.com/johndoe
     icon: twitter
     type: twitter
+    name: Twitter
     account: johndoe
 ```
 
@@ -168,7 +165,7 @@ They are used for sharing comments on your posts. Some need more properties than
 
 ## Creator
 
-This theme was created by [Thomas Piart](https://tpî.eu) initially based upon (Anodyne Theme)(https://github.com/klugjo/hexo-theme-anodyne) by [Jonathan Klughertz](http://www.codeblocq.com/) and also influenced by other minimalist approaches like (mnmlist)[http://mnmlist.com/w/].
+This theme was created by [Thomas Piart](https://tpî.eu) initially based upon (Anodyne Theme)(https://github.com/klugjo/hexo-theme-anodyne) by [Jonathan Klughertz](http://www.codeblocq.com/) and also influenced by other minimalist approaches like [mnmlist](http://mnmlist.com/w/).
 
 ## Bugs
 
