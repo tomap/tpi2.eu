@@ -28,7 +28,7 @@ highlight:
   tab_replace:
 
 # Pagination
-per_page: 100
+per_page: 0
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
@@ -49,5 +49,4 @@ html_minifier:
   collapseWhitespace: true
   collapseBooleanAttributes: true
   removeEmptyAttributes: true
-  removeScriptTypeAttributes: true
   removeStyleLinkTypeAttributes: true
