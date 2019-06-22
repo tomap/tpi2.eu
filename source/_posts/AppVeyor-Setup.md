@@ -9,21 +9,20 @@ I just configured AppVeyor Continuous Deployment.
 To do that, I went to [AppVeyor](https://www.appveyor.com/), [logged in](https://ci.appveyor.com/projects), then [Project](https://ci.appveyor.com/projects) and click [New Project link on top](https://ci.appveyor.com/projects/new), then pick the GitHub Repository that you want to build and deploy ([GitHub.com/tomap/tpi2.eu](https://github.com/tomap/tpi2.eu) in my case).
 
 After that, in the new project, I went to settings, https://ci.appveyor.com/project/tomap/tpi2-eu/settings, in the Build part, I choose Script and added the following:
-```
+
+```bash
 npm install
 npm -g install hexo-cli
 hexo generate
 ```
+
 that generates the site in the **public** folder.
 
-Then I went to Artifact and selected the content of this folder:
-```
-public\**\*
-```
+Then I went to Artifact and selected the content of this folder: `public\**\*`
 
 Then I went to Deploy, choose FTP deployment. And that when issues started :(
 
-FTP is always something messy. Active or not. FTP, SFTP or FTPS. I tried them all without success. Then start googling and although my issue was not exactly the same, I tried the suggestion from [AppVeyor Support Forum](https://help.appveyor.com/discussions/problems/3236-cant-deploy-via-ftp-because-of-error-message-450) and guess what, it worked! The solution was to enable a "Beta FTP" option, ... of course. 
+FTP is always something messy. Active or not. FTP, SFTP or FTPS. I tried them all without success. Then start googling and although my issue was not exactly the same, I tried the suggestion from [AppVeyor Support Forum](https://help.appveyor.com/discussions/problems/3236-cant-deploy-via-ftp-because-of-error-message-450) and guess what, it worked! The solution was to enable a "Beta FTP" option, ... of course.
 
 Well, at first, I wanted to use SFTP (you know, for security, ...), which is supposed to be enabled on my OVH account, but it did not work. So that's for another day.
 
@@ -34,7 +33,8 @@ I googled again and found [that AppVeyor documentation page that helped me](http
 After some trial and errors (~40 of them), I end up with something working. This is all nice and great, but I don't like having all the configuration in AppVeyor, I prefer to have it in my Git Repository, so I can reproduce it somewhere else and I can share it also :)
 
 Here is the exported version of my configuration: **AppVeyor.yml**
-```
+
+```yml
 version: 1.1.{build}
 build_script:
 - cmd: >-
@@ -57,14 +57,16 @@ deploy:
   beta: true
   debug: false
 ```
+
 It takes around 2 minutes to build (due to npm package restore and FTP upload, mainly).
 You can see the latest logs here: https://ci.appveyor.com/project/tomap/tpi2-eu
 And the AppVeyor.yaml is pushed on my repo: https://github.com/tomap/tpi2.eu/blob/master/appveyor.yml
 I also added an indispensable badge in my [ReadMe](https://github.com/tomap/tpi2.eu/blob/master/Readme.md): [![Build status](https://ci.appveyor.com/api/projects/status/amvptl7n6hj3j8i6?svg=true)](https://ci.appveyor.com/project/tomap/tpi2-eu)
 
-EDIT: 
+EDIT:
 It seems that when using **appveyor.yml** to store the configuration, AppVeyor uses a different virtual machine with a lower version of NodeJS. So, google again, and I found [help in their support page again](https://www.appveyor.com/docs/lang/nodejs-iojs/), and I had to add:
-```
+
+```yml
 ...
 install:
 - ps: Install-Product node ''
