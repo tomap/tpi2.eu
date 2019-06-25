@@ -17,24 +17,31 @@ Then I tried to generate encryption keys using travis command line:
 https://docs.travis-ci.com/user/encryption-keys/
 
 Unfortunately, it failed:
-```
+
+```bash
 $ travis
 -bash: /usr/local/bin/travis: /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/bin/ruby: bad interpreter: No such file or directory
 ```
+
 From what I read here and there, it's an issue with the last MacOS update (High Sierra).
 
 Here is the fix:
-```
+
+```bash
 sudo gem install -n /usr/local/bin travis
 ```
+
 Once this is fixed, it is possible to generate your encryption key:
-```
+
+```bash
 travis encrypt "xyz<my ci key>wxy" --add deploy.token
 ```
+
 Note that this will produce a warning that you can ignore.
 
 Here is the full .travis.yml file:
-```
+
+```yml
 language: node_js
 node_js:
 - node
@@ -57,6 +64,7 @@ deploy:
   token:
     secure: tEG0...V9g=
 ```
+
 The current version is stored here: https://github.com/tomap/tpi2.eu/blob/master/.travis.yml
 
 And the result can be seen here: https://tpi-eu.firebaseapp.com/ (I added a specific robots.txt to disallow search engine indexing)
