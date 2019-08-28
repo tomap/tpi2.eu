@@ -11,9 +11,9 @@
 To launch this website:
 
 - clone this repo
-- run ```npm install```
-- run ```npm run server``` (to run locally)
-- run ```npm run generate``` (to generate into Public folder)
+- run ```npm i```
+- run ```npx hexo s -o``` (to run locally)
+- run ```npx hexo g``` (to generate into Public folder)
 
 ## License
 

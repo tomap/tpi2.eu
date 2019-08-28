@@ -1,7 +1,7 @@
 ---
 title: IDN and browser support 2
 tags: ["idn","browser","support"]
-date: 2019-09-21
+date: 2019-06-21
 icon: 🌏
 ---
 This post is about IDN (International Domain Names) and browser support in 2019, 5 years after the previous one. And hopefully, I'll publish this one faster than the previous one.

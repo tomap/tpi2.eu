@@ -12,7 +12,7 @@
     "hexo-generator-tag": "^0.2.0",
     "hexo-html-minifier": "hexojs/hexo-html-minifier",
     "hexo-renderer-ejs": "^0.3.1",
-    "hexo-renderer-marked": "^1.0.1",
+    "hexo-renderer-marked": "^2.0.0",
     "hexo-renderer-stylus": "^0.3.3",
     "hexo-tag-flickr": "tomap/hexo-tag-flickr",
     "hexo-uncss": "tomap/hexo-uncss"
@@ -22,7 +22,7 @@
     "hexo-server": "^0.3.3"
   },
   "engines": {
-    "node": ">= 8"
+    "node": ">= 8.6.0"
   },
   "scripts": {
     "generate": "hexo g",

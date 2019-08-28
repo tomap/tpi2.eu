@@ -20,7 +20,9 @@ I experimented both, and ended up using the 2nd option: embedding FontAwesome to
 
 Then I looked at the very few icons I was using, and realized I could use Emoji instead.
 
-I made a map [FA <> Emoji](https://github.com/tomap/tpi2.eu/blob/0fe8e130dffd87a1d9e631637ddfb99b03f1d5d0/FontAwesomeToUnicode.md). I found an equivalent for every icons except the brands (LinkedIn, Twitter, ...). For them, I switched from Font Icons to SVG of those icons (first using FA SVG's, and then SVG from [SimpleIcons](https://simpleicons.org/), with a more permissive license CC Zero)
+I made a map [FA <> Emoji](https://github.com/tomap/tpi2.eu/blob/0fe8e130dffd87a1d9e631637ddfb99b03f1d5d0/FontAwesomeToUnicode.md).
+I found an equivalent for every icons except the brands (LinkedIn, Twitter, ...).
+For them, I switched from Font Icons to SVG of those icons (first using FA SVG's, and then SVG from [SimpleIcons](https://simpleicons.org/), with a more permissive license CC Zero)
 
 Here are the technical changes I made to do that:
 
