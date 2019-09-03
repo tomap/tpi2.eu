@@ -11,23 +11,24 @@
     "hexo-generator-index": "^0.2.1",
     "hexo-generator-tag": "^0.2.0",
     "hexo-html-minifier": "hexojs/hexo-html-minifier",
-    "hexo-renderer-ejs": "^0.3.1",
+    "hexo-renderer-ejs": "^1.0.0",
     "hexo-renderer-marked": "^2.0.0",
-    "hexo-renderer-stylus": "^0.3.3",
+    "hexo-renderer-stylus": "^1.0.0",
     "hexo-tag-flickr": "tomap/hexo-tag-flickr",
     "hexo-uncss": "tomap/hexo-uncss"
   },
   "devDependencies": {
     "tachyons": "^4.11.1",
-    "hexo-server": "^0.3.3"
+    "hexo-server": "^1.0.0",
+    "markdownlint-cli": "^0.18.0"
   },
   "engines": {
     "node": ">= 8.6.0"
   },
   "scripts": {
-    "generate": "hexo g",
+    "mdlint": "markdownlint {Readme.md,source/**/*.md,scaffolds/*.md,themes/**/*.md}",
     "generateTravis": "hexo g && mv public/assets/404.html public/404.html",
-    "generateCopy": "hexo generate && cp indexing/robots.txt public/robots.txt && cp public/assets/404.html public/404.html && rm public/.htaccess",
-    "server": "hexo server -o"
+    "generateCopy": "hexo g && cp indexing/robots.txt public/robots.txt && cp public/assets/404.html public/404.html && rm public/.htaccess",
+    "installClean": "rm -rf node_modules/hexo-generator-feed && rm -rf node_modules/hexo-clean-css && rm -rf node_modules/hexo-html-minifier && npm i"
   }
 }
