@@ -3,9 +3,9 @@ install:
 - ps: Install-Product node 'Stable'
 build_script:
 - cmd: >-
-    npm install
+    npm i
     
-    npm run generate
+    npx hexo g
 
     copy indexing\robots.txt public\robots.txt
     
