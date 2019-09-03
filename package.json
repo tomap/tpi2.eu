@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "tachyons": "^4.11.1",
-    "hexo-server": "^0.3.3"
+    "hexo-server": "^1.0.0"
   },
   "engines": {
     "node": ">= 8"
