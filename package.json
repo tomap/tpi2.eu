@@ -13,20 +13,20 @@
     "hexo-html-minifier": "hexojs/hexo-html-minifier",
     "hexo-renderer-ejs": "^1.0.0",
     "hexo-renderer-marked": "^2.0.0",
-    "hexo-renderer-stylus": "^1.0.0",
+    "hexo-renderer-stylus": "^1.1.0",
     "hexo-tag-flickr": "tomap/hexo-tag-flickr",
     "hexo-uncss": "tomap/hexo-uncss"
   },
   "devDependencies": {
     "tachyons": "^4.11.1",
     "hexo-server": "^1.0.0",
-    "markdownlint-cli": "^0.18.0"
+    "markdownlint": "^0.17.0",
+    "glob": "^7.1.4"
   },
   "engines": {
     "node": ">= 8.6.0"
   },
   "scripts": {
-    "mdlint": "markdownlint {Readme.md,source/**/*.md,scaffolds/*.md,themes/**/*.md}",
     "generateTravis": "hexo g && mv public/assets/404.html public/404.html",
     "generateCopy": "hexo g && cp indexing/robots.txt public/robots.txt && cp public/assets/404.html public/404.html && rm public/.htaccess",
     "installClean": "rm -rf node_modules/hexo-generator-feed && rm -rf node_modules/hexo-clean-css && rm -rf node_modules/hexo-html-minifier && npm i"

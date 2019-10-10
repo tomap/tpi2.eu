@@ -3,7 +3,7 @@ install:
 - ps: Install-Product node 'Stable'
 build_script:
 - cmd: >-
-    npm i
+    npm i --production
     
     npx hexo g
 

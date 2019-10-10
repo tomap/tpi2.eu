@@ -50,3 +50,12 @@ html_minifier:
   collapseBooleanAttributes: true
   removeEmptyAttributes: true
   removeStyleLinkTypeAttributes: true
+
+markdown_lint:
+  default: true
+  files: "{Readme.md,source/**/*.md,scafolds/*.md,themes/**/*.md}"
+  MD013:
+    line_length: 372
+    code_block_line_length: 830
+  MD024: 0
+  MD034: 0

@@ -7,7 +7,7 @@ branches:
   only:
   - master
 install:
-- npm i
+- npm i --production
 script:
 - npm run generateTravis
 deploy:
