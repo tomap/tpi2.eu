@@ -11,4 +11,12 @@ jobs:
       with:
         node-version: 12.x
     - run: npm i
-    - run: npx hexo g 
+    - run: npx hexo g
+    - run: export
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - run: export
+    
+    
+    
