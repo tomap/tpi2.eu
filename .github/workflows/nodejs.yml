@@ -10,5 +10,5 @@ jobs:
     - uses: actions/setup-node@master
       with:
         node-version: 12.x
-    - run: npm i --production
+    - run: npm i
     - run: npx hexo g 
