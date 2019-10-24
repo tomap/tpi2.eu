@@ -28,6 +28,7 @@ jobs:
           name: public
       - run: npm i -g firebase-tools
       - run: firebase deploy
+        
   deploy-ovh:
     runs-on: ubuntu-latest
     needs: build
@@ -41,8 +42,9 @@ jobs:
         run: |
           ls
           ls public
-          curl --list-only ftp://xntprja:xx@ftp.cluster014.ovh.net/www/
           ftp -h
+          curl --list-only ftp://xntprja:${{ secrets.FTP_PASSWORD }}@ftp.cluster014.ovh.net/www/
+          
   deploy-github:
     runs-on: ubuntu-latest
     needs: build
@@ -54,16 +56,16 @@ jobs:
           name: public
       - name: gh
         run: |
-          set GH_TOKEN=${{ secrets.GITHUB_TOKEN }}
+          set GH_TOKEN=
           git clone https://github.com/tomap/tomap.github.io.git
           cp -a public/. tomap.github.io
           cd tomap.github.io
           git status
           git add .
           git config -l
-          # git config --global user.email "piartt@gmail.com"
-          # git config --global user.name "tomap"
+          git config --global user.email "${{ secrets.GITHUB_EMAIL }}"
+          git config --global user.name "tomap"
           git commit -m "update site"
-          git remote add origin-pages https://tomap:${GH_TOKEN}@github.com/tomap/tomap.github.io.git
+          git remote add origin-pages https://tomap:${{ secrets.GITHUB_TOKEN }}@github.com/tomap/tomap.github.io.git
           # git push --set-upstream origin-pages master
     
