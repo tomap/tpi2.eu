@@ -42,8 +42,8 @@ jobs:
         run: |
           ls
           ls public
-          ftp -h
-          curl --list-only ftp://xntprja:${{ secrets.FTP_PASSWORD }}@ftp.cluster014.ovh.net/www/
+           
+          curl --list-only ftp://xntprja:${{ secrets.FTP_PASSWORD }}@ftp.cluster014.hosting.ovh.net:21/www/
           
   deploy-github:
     runs-on: ubuntu-latest
