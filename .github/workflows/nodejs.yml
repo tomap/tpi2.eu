@@ -60,7 +60,7 @@ jobs:
           cd tomap.github.io
           git status
           git add .
-          git config
+          git config -l
           # git config --global user.email "piartt@gmail.com"
           # git config --global user.name "tomap"
           git commit -m "update site"
