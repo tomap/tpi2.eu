@@ -9,7 +9,7 @@ jobs:
     - uses: actions/checkout@master
     - uses: actions/setup-node@master
       with:
-        node-version: 12.x
+        node-version: 13.x
     - run: npm i
     - run: npx hexo g
     - uses: actions/upload-artifact@master
@@ -23,6 +23,9 @@ jobs:
     steps:
       - run: set FIREBASE_TOKEN=${{ secrets.FIREBASE_TOKEN }}
       - uses: actions/checkout@master
+      - uses: actions/setup-node@master
+        with:
+          node-version: 13.x
       - uses: actions/download-artifact@master
         with:
           name: public
@@ -43,7 +46,7 @@ jobs:
       - name: ftp
         run: |
           cp indexing/off.txt public/robots.txt
-          find public -type f -exec curl --user xntprja:${{ secrets.FTP_PASSWORD }} --ftp-create-dirs -T {} ftp://@ftp.cluster014.hosting.ovh.net:21/www/test/{} \;
+          find public -type f -exec curl --user xntprja:${{ secrets.FTP_PASSWORD }} --ftp-create-dirs -T {} ftp://@ftp.cluster014.hosting.ovh.net:21/www/{} \;
           
   deploy-github:
     runs-on: ubuntu-latest
@@ -66,6 +69,6 @@ jobs:
           git config --global user.email "${{ secrets.GITHUB_EMAIL }}"
           git config --global user.name "tomap"
           git commit -m "update site"
-          git remote add origin-pages https://tomap:${{ secrets.GITHUB_TOKEN }}@github.com/tomap/tomap.github.io.git
+          git remote add origin-pages https://tomap:${{ secrets.GH_TOKEN }}@github.com/tomap/tomap.github.io.git
           git push --set-upstream origin-pages master
     
