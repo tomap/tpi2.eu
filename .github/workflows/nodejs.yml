@@ -12,6 +12,7 @@ jobs:
         node-version: 12.x
     - run: npm i
     - run: npx hexo g
+    - run: off
     - uses: actions/upload-artifact@master
       with:
         path: public
@@ -26,8 +27,10 @@ jobs:
       - uses: actions/download-artifact@master
         with:
           name: public
-      - run: npm i -g firebase-tools
-      - run: firebase deploy
+      - run: |
+          cp indexing/on.txt public/robots.txt
+          npm i -g firebase-tools
+          firebase deploy
         
   deploy-ovh:
     runs-on: ubuntu-latest
@@ -40,10 +43,8 @@ jobs:
           name: public
       - name: ftp
         run: |
-          ls
-          ls public
-           
-          curl --list-only ftp://xntprja:${{ secrets.FTP_PASSWORD }}@ftp.cluster014.hosting.ovh.net:21/www/
+          cp indexing/off.txt public/robots.txt
+          find public -type f -exec curl --user xntprja:${{ secrets.FTP_PASSWORD }} --ftp-create-dirs -T {} ftp://@ftp.cluster014.hosting.ovh.net:21/www/test/{} \;
           
   deploy-github:
     runs-on: ubuntu-latest
@@ -56,8 +57,8 @@ jobs:
           name: public
       - name: gh
         run: |
-          set GH_TOKEN=
           git clone https://github.com/tomap/tomap.github.io.git
+          cp indexing/off.txt public/robots.txt
           cp -a public/. tomap.github.io
           cd tomap.github.io
           git status
@@ -67,5 +68,5 @@ jobs:
           git config --global user.name "tomap"
           git commit -m "update site"
           git remote add origin-pages https://tomap:${{ secrets.GITHUB_TOKEN }}@github.com/tomap/tomap.github.io.git
-          # git push --set-upstream origin-pages master
+          git push --set-upstream origin-pages master
     
