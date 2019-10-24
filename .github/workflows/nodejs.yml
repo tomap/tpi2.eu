@@ -16,7 +16,7 @@ jobs:
       with:
         path: public
         name: public
-  deploy:
+  deploy-firebase:
     runs-on: ubuntu-latest
     needs: build
     if: github.ref == 'master'
@@ -28,4 +28,39 @@ jobs:
           name: public
       - run: npm i -g firebase-tools
       - run: firebase deploy
+  deploy-ovh:
+    runs-on: ubuntu-latest
+    needs: build
+    # if: github.ref == 'master'
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/download-artifact@master
+        with:
+          name: public
+      - run: |
+          ls
+          ls public
+          lftp -h
+  deploy-github:
+    runs-on: ubuntu-latest
+    needs: build
+    # if: github.ref == 'master'
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/download-artifact@master
+        with:
+          name: public
+      - run: |
+          SET GH_TOKEN=${{ secrets.GITHUB_TOKEN }}
+          git clone https://github.com/tomap/tomap.github.io.git
+          cp -a public/. tomap.github.io
+          cd tomap.github.io
+          git status
+          git add .
+          git config
+          # git config --global user.email "piartt@gmail.com"
+          # git config --global user.name "tomap"
+          git commit -m "update site"
+          git remote add origin-pages https://tomap:${GH_TOKEN}@github.com/tomap/tomap.github.io.git
+          # git push --set-upstream origin-pages master
     
