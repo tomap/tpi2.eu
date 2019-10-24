@@ -27,8 +27,7 @@
     "node": ">= 8.6.0"
   },
   "scripts": {
-    "generateTravis": "hexo g && mv public/assets/404.html public/404.html",
-    "generateCopy": "hexo g && cp indexing/robots.txt public/robots.txt && cp public/assets/404.html public/404.html && rm public/.htaccess",
+    "build": "hexo g",
     "installClean": "rm -rf node_modules/hexo-generator-feed && rm -rf node_modules/hexo-clean-css && rm -rf node_modules/hexo-html-minifier && npm i"
   }
 }
