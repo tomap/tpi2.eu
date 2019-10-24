@@ -2,9 +2,7 @@
 
 [![Dependency Status](https://david-dm.org/tomap/tpi2.eu.svg)](https://david-dm.org/tomap/tpi2.eu)
 [![Dependency Status](https://david-dm.org/tomap/tpi2.eu/dev-status.svg)](https://david-dm.org/tomap/tpi2.eu?type=dev)
-[![AppVeyor Build status](https://ci.appveyor.com/api/projects/status/amvptl7n6hj3j8i6?svg=true)](https://ci.appveyor.com/project/tomap/tpi2-eu)
-[![Travis-ci Build status](https://travis-ci.org/tomap/tpi2.eu.svg?branch=master)](https://travis-ci.org/tomap/tpi2.eu)
-[![Codeship Build Status](https://app.codeship.com/projects/faf92df0-2f86-0136-7ebd-1220cc68bc4e/status?branch=master)](https://app.codeship.com/projects/288400)
+[![GitHub Actions Status](https://github.com/tomap/tpi2.eu/workflows/nodejs/badge.svg)](https://github.com/tomap/tpi2.eu/actions)
 
 ## How To
 
@@ -13,7 +11,7 @@ To launch this website:
 - clone this repo
 - run ```npm i```
 - run ```npx hexo s -o``` (to run locally)
-- run ```npx hexo g``` (to generate into Public folder)
+- run ```npx hexo g``` (to generate into `public` folder)
 
 ## License
 
