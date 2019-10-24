@@ -12,7 +12,6 @@ jobs:
         node-version: 12.x
     - run: npm i
     - run: npx hexo g
-    - run: off
     - uses: actions/upload-artifact@master
       with:
         path: public
