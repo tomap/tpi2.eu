@@ -15,10 +15,6 @@ root: /
 # Directory
 skip_render:
  - 'assets/404.html'
- - 'googlec312aa49c107e0a6.html'
-
-include:
-  - .htaccess
 
 # Writing
 highlight:

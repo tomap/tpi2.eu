@@ -30,7 +30,7 @@ jobs:
         with:
           name: public
       - run: |
-          cp indexing/on.txt public/robots.txt
+          cp assets/indexing-on.txt public/robots.txt
           npm i -g firebase-tools
           firebase deploy
         
@@ -45,7 +45,8 @@ jobs:
           name: public
       - name: ftp
         run: |
-          cp indexing/off.txt public/robots.txt
+          cp assets/indexing-off.txt public/robots.txt
+          cp assets/.htaccess public/.htaccess
           find public -type f -exec curl --user xntprja:${{ secrets.FTP_PASSWORD }} --ftp-create-dirs -T {} ftp://@ftp.cluster014.hosting.ovh.net:21/www/{} \;
           
   deploy-github:
@@ -60,7 +61,8 @@ jobs:
       - name: gh
         run: |
           git clone https://github.com/tomap/tomap.github.io.git
-          cp indexing/off.txt public/robots.txt
+          rm -r tomap.github.io/*
+          cp assets/indexing-off.txt public/robots
           cp -a public/. tomap.github.io
           cd tomap.github.io
           git status
