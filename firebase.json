@@ -1,15 +1,8 @@
 {
     "hosting": {
       "public": "public",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**",
-        "**/.htaccess",
-        "**/google*.html"
-      ],
       "headers": [ {
-        "source" : "**/*.@(eot|otf|ttf|ttc|woff|woff2|svg|ico)",
+        "source" : "**/*.@(ico)",
         "headers" : [ {
           "key" : "Cache-Control",
           "value" : "max-age=365000000, immutable"
@@ -18,7 +11,7 @@
         {
           "source":"**",
           "headers": [
-            {"key":"Content-Security-Policy","value":"default-src 'none'; style-src 'self'; img-src * data:"},
+            {"key":"Content-Security-Policy","value":"default-src 'none'; style-src 'self'; img-src * data:; connect-src 'self'"},
             {"key":"Referrer-Policy","value":"no-referrer"},
             {"key":"X-Frame-Options","value":"deny"}
           ]
