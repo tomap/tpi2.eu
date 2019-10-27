@@ -21,7 +21,6 @@ jobs:
     needs: build
     if: github.ref == 'refs/heads/master'
     steps:
-      - run: set FIREBASE_TOKEN=${{ secrets.FIREBASE_TOKEN }}
       - uses: actions/checkout@master
       - uses: actions/setup-node@master
         with:
@@ -29,7 +28,9 @@ jobs:
       - uses: actions/download-artifact@master
         with:
           name: public
-      - run: |
+      - name: deploy
+        run: |
+          set FIREBASE_TOKEN=${{ secrets.FIREBASE_TOKEN }}
           cp assets/indexing-on.txt public/robots.txt
           npm i -g firebase-tools
           firebase deploy
