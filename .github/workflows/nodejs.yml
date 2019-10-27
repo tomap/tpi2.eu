@@ -19,7 +19,7 @@ jobs:
   deploy-firebase:
     runs-on: ubuntu-latest
     needs: build
-    if: github.ref == 'master'
+    if: github.ref == 'refs/heads/master'
     steps:
       - run: set FIREBASE_TOKEN=${{ secrets.FIREBASE_TOKEN }}
       - uses: actions/checkout@master
@@ -37,7 +37,7 @@ jobs:
   deploy-ovh:
     runs-on: ubuntu-latest
     needs: build
-    if: github.ref == 'master'
+    if: github.ref == 'refs/heads/master'
     steps:
       - uses: actions/checkout@master
       - uses: actions/download-artifact@master
@@ -52,7 +52,7 @@ jobs:
   deploy-github:
     runs-on: ubuntu-latest
     needs: build
-    if: github.ref == 'master'
+    if: github.ref == 'refs/heads/master'
     steps:
       - uses: actions/checkout@master
       - uses: actions/download-artifact@master

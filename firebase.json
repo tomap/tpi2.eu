@@ -11,7 +11,7 @@
         {
           "source":"**",
           "headers": [
-            {"key":"Content-Security-Policy","value":"default-src 'none'; style-src 'self'; img-src * data:; connect-src 'self'"},
+            {"key":"Content-Security-Policy","value":"default-src 'none'; style-src 'self'; connect-src 'self'; img-src * data:"},
             {"key":"Referrer-Policy","value":"no-referrer"},
             {"key":"X-Frame-Options","value":"deny"}
           ]
