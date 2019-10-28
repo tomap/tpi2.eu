@@ -30,10 +30,9 @@ jobs:
           name: public
       - name: deploy
         run: |
-          set FIREBASE_TOKEN=${{ secrets.FIREBASE_TOKEN }}
           cp assets/indexing-on.txt public/robots.txt
           npm i -g firebase-tools
-          firebase deploy
+          firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}
         
   deploy-ovh:
     runs-on: ubuntu-latest
@@ -66,6 +65,7 @@ jobs:
           cp assets/indexing-off.txt public/robots.txt
           cp -a public/. tomap.github.io
           cd tomap.github.io
+          export
           git status
           git add .
           git config -l
