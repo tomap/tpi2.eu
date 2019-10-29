@@ -28,7 +28,7 @@
   },
   "scripts": {
     "build": "hexo g",
-    "build-off": "hexo g && cp assets/indexing-off.txt public/robots.txt"
+    "build-off": "hexo g && cp assets/indexing-off.txt public/robots.txt",
     "installClean": "rm -rf node_modules/hexo-generator-feed && rm -rf node_modules/hexo-clean-css && rm -rf node_modules/hexo-html-minifier && npm i"
   }
 }
