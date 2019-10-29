@@ -58,14 +58,14 @@ jobs:
       - uses: actions/download-artifact@master
         with:
           name: public
-      - name: gh
+      - name: github
         run: |
           git clone https://github.com/tomap/tomap.github.io.git
           rm -r tomap.github.io/*
           cp assets/indexing-off.txt public/robots.txt
           cp -a public/. tomap.github.io
           cd tomap.github.io
-          export
+          echo ${{ github.sha }} > sha.txt
           git status
           git add .
           git config -l
