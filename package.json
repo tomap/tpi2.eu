@@ -20,11 +20,11 @@
   "devDependencies": {
     "tachyons": "^4.11.1",
     "hexo-server": "^1.0.0",
-    "markdownlint": "^0.17.0",
-    "glob": "^7.1.4"
+    "markdownlint": "^0.17.2",
+    "glob": "^7.1.5"
   },
   "engines": {
-    "node": ">= 8.10.0"
+    "node": ">= 10.17.0"
   },
   "scripts": {
     "build": "hexo g",
