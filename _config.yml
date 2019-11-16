@@ -6,11 +6,9 @@
 title: Thomas Piart - tpî.eu
 author: Thomas Piart
 description: Thomas Piart - tpî.eu - Personal site
-language: en
 
 # URL
 url: https://tpî.eu
-root: /
 
 # Directory
 skip_render:
@@ -18,9 +16,7 @@ skip_render:
 
 # Writing
 highlight:
-  enable: true
   line_number: false
-  auto_detect: false
   tab_replace:
 
 # Pagination
@@ -41,12 +37,8 @@ uncss:
   priority : 12
 
 html_minifier:
-  removeComments: true
-  collapseWhitespace: true
-  collapseBooleanAttributes: true
-  removeEmptyAttributes: true
-  removeStyleLinkTypeAttributes: true
-
+  decodeEntities: true
+  
 markdown_lint:
   default: true
   files: "{Readme.md,source/**/*.md,scafolds/*.md,themes/**/*.md}"

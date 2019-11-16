@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "hexo": {
-    "version": "3.9.0"
+    "version": "4.0.0"
   },
   "dependencies": {
-    "hexo": "^3.9.0",
+    "hexo": "^4.0.0",
     "hexo-clean-css": "hexojs/hexo-clean-css",
     "hexo-generator-index": "hexojs/hexo-generator-index",
     "hexo-generator-tag": "^1.0.0",
@@ -21,7 +21,7 @@
     "tachyons": "^4.11.1",
     "hexo-server": "^1.0.0",
     "markdownlint": "^0.17.2",
-    "glob": "^7.1.5"
+    "glob": "^7.1.6"
   },
   "engines": {
     "node": ">= 10.17.0"

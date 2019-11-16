@@ -11,8 +11,12 @@
   cursor default
 
  @media print
-    nav, footer 
+    nav, footer, .comment
       display none !important
+    @page
+      margin 0
+    body
+      margin 1cm
 
 /* emoji / ascii icons */
 .ec

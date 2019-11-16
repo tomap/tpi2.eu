@@ -7,7 +7,7 @@ pdf: "Thomas_Piart_Resume"
 
 ## Experience ##
 
-### Vente-Privee ###
+### Veepee - Previously Vente-Privee ###
 
 French ecommerce company, pioneer in online flash sales of designer brands.
 
@@ -15,7 +15,7 @@ French ecommerce company, pioneer in online flash sales of designer brands.
 
 - Specify, Develop & Test for an API Gateway
   - .Net Core Microservices
-  - Couchbase, AMQ, Docker, Rancher, GitLab CI, ...
+  - Couchbase, AMQ, Docker, Rancher, Kubernetes, ELK, GitLab CI, ...
 
 ### Enablon ###
 
