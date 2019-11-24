@@ -6,15 +6,16 @@
     "version": "4.0.0"
   },
   "dependencies": {
-    "hexo": "^4.0.0",
+    "hexo": "tomap/hexo#feature/themeAsPackage",
     "hexo-clean-css": "hexojs/hexo-clean-css",
     "hexo-generator-index": "hexojs/hexo-generator-index",
     "hexo-generator-tag": "^1.0.0",
     "hexo-html-minifier": "hexojs/hexo-html-minifier",
     "hexo-renderer-ejs": "^1.0.0",
     "hexo-renderer-marked": "^2.0.0",
-    "hexo-renderer-stylus": "^1.1.0",
+    "hexo-renderer-stylus": "tomap/hexo-renderer-stylus#feature/theme_config",
     "hexo-tag-flickr": "tomap/hexo-tag-flickr",
+    "hexo-theme-minidyne": "tomap/hexo-theme-minidyne#feature/npm",
     "hexo-uncss": "tomap/hexo-uncss"
   },
   "devDependencies": {

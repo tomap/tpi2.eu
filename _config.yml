@@ -28,10 +28,41 @@ flickr_api_key: 78501c2c12bff9c7a22c013d5155045a
 
 ## Themes: https://hexo.io/themes/
 theme: minidyne
+themeFromNpm: true
 
-menu:
-  Home: /
-  Resume: /resume/
+theme_config:
+  menu:
+    Home: /
+    Resume: /resume/
+
+  # Index Page
+  index_icon: 🤝
+
+  twitter_handle: '@tomap'
+
+  # Social Media Platforms, also used for comments
+  social_platforms:
+    - url: https://stackoverflow.com/users/383029/tomap
+      icon: stackoverflow
+      name: StackOverflow
+    - url: https://github.com/tomap/
+      icon: github
+      type: github
+      name: GitHub
+      repository: tpi2.eu
+    - url: https://linkedin.com/in/thomaspiart
+      icon: linkedin
+      type: linkedin
+      name: LinkedIn
+    - url: https://twitter.com/tomap
+      icon: twitter
+      type: twitter
+      name: Twitter
+      account: tomap
+  
+  main-color: '#841'
+  gradient-color-1: '#f95'
+  gradient-color-2: '#e83'
 
 uncss:
   priority : 12
@@ -41,7 +72,7 @@ html_minifier:
   
 markdown_lint:
   default: true
-  files: "{Readme.md,source/**/*.md,scafolds/*.md,themes/**/*.md}"
+  files: "{Readme.md,source/**/*.md,scafolds/*.md}"
   MD013:
     line_length: 372
     code_block_line_length: 830
