@@ -24,6 +24,7 @@ per_page: 0
 
 # dates
 timezone: 'UTC'
+use_date_for_updated: true
 
 ## Themes:
 theme: minidyne
@@ -36,7 +37,9 @@ menu:
 flickr_api_key: 78501c2c12bff9c7a22c013d5155045a
 
 feed:
-  type: rss2
+  type:
+    - atom
+    - rss2
 
 uncss:
   priority : 12
