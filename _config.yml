@@ -23,7 +23,7 @@ highlight:
 per_page: 0
 
 # dates
-# use_date_for_updated: true
+use_date_for_updated: true
 timezone: 'UTC'
 
 ## Themes:
