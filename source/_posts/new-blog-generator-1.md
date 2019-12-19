@@ -1,6 +1,6 @@
 ---
-date : 2017-02-05
-title : New site generator (take 1)
+date: 2017-02-05
+title: New site generator (take 1)
 icon: 🚫
 tags: ["hugo", "static", "go"]
 ---
