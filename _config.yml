@@ -34,13 +34,16 @@ menu:
 ## Plugins:
 flickr_api_key: 78501c2c12bff9c7a22c013d5155045a
 
+marked:
+  headerIds: false
+
 feed:
   type:
     - atom
     - rss2
 
 uncss:
-  priority : 12
+  priority: 12
 
 html_minifier:
   decodeEntities: true
