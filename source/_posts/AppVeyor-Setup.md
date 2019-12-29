@@ -1,6 +1,6 @@
 ---
-date : 2017-02-19
-title : AppVeyor Setup
+date: 2017-02-19
+title: AppVeyor Setup
 icon: ⏩
 tags: ["appveyor", "github"]
 ---

@@ -1,6 +1,4 @@
 # Hexo Configuration
-## Docs: https://hexo.io/docs/configuration.html
-## Source: https://github.com/hexojs/hexo/
 
 # Site
 title: Thomas Piart - tpî.eu
@@ -22,19 +20,30 @@ highlight:
 # Pagination
 per_page: 0
 
-# Extensions
-## Plugins: https://hexo.io/plugins/
-flickr_api_key: 78501c2c12bff9c7a22c013d5155045a
+# dates
+timezone: 'UTC'
+use_date_for_updated: true
 
-## Themes: https://hexo.io/themes/
+## Themes:
 theme: minidyne
 
 menu:
   Home: /
   Resume: /resume/
 
+## Plugins:
+flickr_api_key: 78501c2c12bff9c7a22c013d5155045a
+
+marked:
+  headerIds: false
+
+feed:
+  type:
+    - atom
+    - rss2
+
 uncss:
-  priority : 12
+  priority: 12
 
 html_minifier:
   decodeEntities: true
