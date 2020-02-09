@@ -89,6 +89,7 @@ jobs:
           wget https://dist.ipfs.io/go-ipfs/v0.4.23/go-ipfs_v0.4.23_linux-amd64.tar.gz
           tar xvfz go-ipfs_v0.4.23_linux-amd64.tar.gz
           cd go-ipfs
-          ipfs init
-          ipfs daemon > ipfs.log &
+          ./ipfs init
+          ./ipfs daemon > ipfs.log &
+          cat ipfs.log
           
