@@ -1,8 +1,7 @@
 ---
-title : Thomas Piart - Resume
+title: Thomas Piart - Resume
 icon: 📜
 layout: page
-pdf: "Thomas_Piart_Resume"
 ---
 
 ## Experience ##
@@ -15,9 +14,9 @@ French ecommerce company, pioneer in online flash sales of designer brands.
 
 - Specify, Develop & Test for an API Gateway
   - .Net Core Microservices
-  - Couchbase, AMQ, Docker, Rancher, Kubernetes, ELK, GitLab CI, ...
+  - Kubernetes, ELK, GitLab CI, Couchbase, AMQ, Docker, Rancher, ...
 
-### Enablon ###
+### Enablon - Wolters Kluwer ###
 
 Leading software vendor on Sustainability, EH&S and Risk management.
 
@@ -28,7 +27,7 @@ Leading software vendor on Sustainability, EH&S and Risk management.
   - Refactoring legacy code when necessary
   - Define technical architecture of components
   - Guide development teams to apply best practices (Unit Tests, Coding Conventions, ...)
-- Migrated from Jenkins & SVN to Visual Studio Team Services & Git & Hosted Agents
+- Migrated from Jenkins & SVN to Azure DevOps & Git & Hosted Agents
   - Develop integration middleware between internal apps & VSTS (.Net async)
 - Resolve complex requests
   - Develop embedded diagnostic tools (Web, .Net, Performance, ...)
@@ -48,8 +47,8 @@ Responsible of the development of the reporting tool and the web interface & Scr
 - Improve the UI to switch to "Web 2.0" UX (ajax/json, interactivity, customization of UI for each user, ...)
 - Manage a scrum team (Agile methodology applied for numerous sprints)
 - Handle technical documentation for consultants and partners
-- Development and deployment of automated test of the software inside a continuous integration pipeline:
-  - Jenkins (then Visual Studio Team services) as an orchestrator
+- Development and deployment of automated test of the software inside a continuous integration pipeline :
+  - Jenkins (then Azure DevOps) as an orchestrator
   - Selenium & SoapUI for integration tests & XUnit (then NUnit) & Jasmine for unit tests
   - MSBuild as a build script
 - Manage a team of 4 developers
@@ -61,7 +60,7 @@ Responsible of the development of the reporting tool and the web interface & Scr
 
 Naval Shipyard in Dieppe (France)
 
-#### R&D Engineer | Jan 2004 ####
+#### R&D Engineer | Jan 2004 - Nov 2004 ####
 
 Confidential study around the following topics :
 
@@ -70,7 +69,7 @@ Confidential study around the following topics :
 
 ## Education ##
 
-- 2015+ : Pluralsight (C#, Refactoring, Design Patterns, VSTS, ALM, TDD, DDD, ...)
+- 2015+ : Pluralsight (C#, Refactoring, Design Patterns, Azure DevOps, ALM, TDD, DDD, ...)
 - 2013 : Certified Scrum Master
 - 1999 - 2004 : ESIEE Paris - École Supérieur d'Ingénieurs en Électronique et Électrotechnique
   Graduated in 2004, specialized in embedded system
@@ -82,8 +81,8 @@ Confidential study around the following topics :
 
 Programing languages :
 
-- Daily use : .Net (VB & C#), MSBuild, HTML5 (Canvas), JavaScript (jQuery), CSS3, LESS
-- Other : C++, Flash/ActionScript, Java, C, PHP/MySQL, NodeJS, Python, Perl, Asm 68000, VB6
+- Daily use : .Net (VB & C#), SQL, Bash, HTML5 (Canvas), JavaScript (NodeJs & Front), CSS3, LESS
+- Other : Python, C++
 
 Conception :
 
@@ -91,15 +90,15 @@ Conception :
 
 OS :
 
-- Windows & Unix/Linux (Debian, Ubuntu, RTAI)
+- Windows & Unix/Linux (Debian, Ubuntu, Alpine, RTAI)
 
 IDE :
 
-- Visual Studio (C#, VB, C++)
+- Visual Studio (C#, VB, C++), Visual Studio Code
 
 Other :
 
-- Git, Bash, Svn, Cvs, Apache httpd, Ant, IIS, MatLab/Simulink (SimMechanics), Scilab, Octave, Mathematica
+- Git, nginx, Kubernetes, Apache httpd, MatLab/Simulink (SimMechanics), Scilab, Octave, Mathematica
 
 ### Language ###
 
