@@ -87,7 +87,7 @@ jobs:
       - name: github
         run: |
           wget https://dist.ipfs.io/go-ipfs/v0.4.23/go-ipfs_v0.4.23_linux-amd64.tar.gz
-          tar xvfz go-ipfs_v0.4.14_linux-amd64.tar.gz
+          tar xvfz go-ipfs_v0.4.23_linux-amd64.tar.gz
           cd go-ipfs
           ./install.sh
           ipfs init
