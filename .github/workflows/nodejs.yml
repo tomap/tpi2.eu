@@ -9,7 +9,7 @@ jobs:
     - uses: actions/checkout@master
     - uses: actions/setup-node@master
       with:
-        node-version: 14.x
+        node-version: 13.x
     - run: npm i
     - run: npx hexo g
     - uses: actions/upload-artifact@master
@@ -64,12 +64,12 @@ jobs:
       - name: github
         run: |
           git clone https://github.com/tomap/tomap.github.io.git
-          rm -r tomap.github.io/*
+          rm -rf tomap.github.io/*
           cp assets/indexing-off.txt public/robots.txt
           cp -a public/. tomap.github.io
           cd tomap.github.io
           echo ${{ github.sha }} > sha.txt
-          git status
+          # git status
           git add .
           git config -l
           git config --global user.email "${{ secrets.GITHUB_EMAIL }}"
