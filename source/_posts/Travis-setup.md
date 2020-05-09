@@ -31,7 +31,7 @@ To upload a full folder, I found this [on Stack Overflow](https://stackoverflow.
 find mydir -type f -exec curl -u xxx:psw --ftp-create-dirs -T {} ftp://192.168.1.158/public/demon_test/{} \;
 ```
 
-It is closer but I had to replace **-exec** parameter by piping to **[xargs](https://www.computerhope.com/unix/xargs.htm) because **-exec** does not return a -1 exit code in case of failure.
+It is closer but I had to replace **-exec** parameter by piping to [xargs](https://www.computerhope.com/unix/xargs.htm) because **-exec** does not return a -1 exit code in case of failure.
 
 For escaping data to yaml, I used https://www.json2yaml.com/
 

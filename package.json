@@ -19,9 +19,9 @@
     "hexo-uncss": "github:tomap/hexo-uncss"
   },
   "devDependencies": {
-    "tachyons": "^4.11.1",
+    "tachyons": "^4.12.0",
     "hexo-server": "^1.0.0",
-    "markdownlint": "^0.20.1",
+    "markdownlint": "^0.20.2",
     "glob": "^7.1.6"
   },
   "engines": {
