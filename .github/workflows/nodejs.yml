@@ -9,7 +9,7 @@ jobs:
     - uses: actions/checkout@master
     - uses: actions/setup-node@master
       with:
-        node-version: 13.x
+        node-version: 14.x
     - run: npm i
     - run: npx hexo g
     - uses: actions/upload-artifact@master
@@ -71,7 +71,7 @@ jobs:
           echo ${{ github.sha }} > sha.txt
           # git status
           git add .
-          git config -l
+          # git config -l
           git config --global user.email "${{ secrets.GITHUB_EMAIL }}"
           git config --global user.name "tomap"
           git commit -m "Update site"
