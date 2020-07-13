@@ -65,7 +65,7 @@ deploy:
     secure: tEG0...V9g=
 ```
 
-The current version is stored here: https://github.com/tomap/tpi2.eu/blob/master/.travis.yml
+The current version is stored here: [https://github.com/tomap/tpi2.eu/blob/master/.travis.yml](https://github.com/tomap/tpi2.eu/blob/b4a196bef3b788a73d44cbdfb45405dc10dc5c63/.travis.yml)
 
 And the result can be seen here: https://tpi-eu.firebaseapp.com/ (I added a specific robots.txt to disallow search engine indexing)
 

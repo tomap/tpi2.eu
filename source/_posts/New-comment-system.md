@@ -24,7 +24,7 @@ And here is the result:
 
 ## Twitter
 
-For Twitter, there is a nice documentation: https://dev.twitter.com/web/tweet-button/web-intent
+For Twitter, there is a nice documentation: https://developer.twitter.com/en/docs/twitter-for-websites/web-intents/overview
 
 Here is the URL: ``https://twitter.com/intent/tweet?url=https://example.com/myPage&via=tomap``
 

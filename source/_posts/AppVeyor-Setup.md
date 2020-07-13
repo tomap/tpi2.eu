@@ -62,7 +62,7 @@ deploy:
 
 It takes around 2 minutes to build (due to npm package restore and FTP upload, mainly).
 You can see the latest logs here: https://ci.appveyor.com/project/tomap/tpi2-eu
-And the AppVeyor.yaml is pushed on my repo: https://github.com/tomap/tpi2.eu/blob/master/appveyor.yml
+And the AppVeyor.yaml is pushed on my repo: [https://github.com/tomap/tpi2.eu/blob/master/appveyor.yml](https://github.com/tomap/tpi2.eu/blob/b4a196bef3b788a73d44cbdfb45405dc10dc5c63/appveyor.yml)
 I also added an indispensable badge in my [ReadMe](https://github.com/tomap/tpi2.eu/blob/master/Readme.md): [![Build status](https://ci.appveyor.com/api/projects/status/amvptl7n6hj3j8i6?svg=true)](https://ci.appveyor.com/project/tomap/tpi2-eu)
 
 EDIT:
