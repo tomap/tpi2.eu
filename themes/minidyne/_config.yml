@@ -13,7 +13,7 @@ social_platforms:
     type: github
     name: GitHub
     repository: tpi2.eu
-  - url: https://linkedin.com/in/thomaspiart
+  - url: https://www.linkedin.com/in/thomaspiart/
     icon: linkedin
     type: linkedin
     name: LinkedIn
@@ -22,3 +22,7 @@ social_platforms:
     type: twitter
     name: Twitter
     account: tomap
+  - url: /rss2.xml
+    icon: rss
+    type: rss
+    name: Rss

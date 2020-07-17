@@ -61,11 +61,7 @@
         <meta name="twitter:site" content="<%= theme.twitter_handle %>" />
     <% } %>
 
-    <link rel="alternate" type="application/rss+xml" href="<%= url_for('/rss2.xml') %>"
-        title="RSS feed for <%= config.title %>">
-
-    <link rel="alternate" type="application/atom+xml" href="<%= url_for('/atom.xml') %>"
-        title="Atom feed for <%= config.title %>">
+    <meta name="generator" content="Hexo" />
 
     <!-- Title -->
     <%
