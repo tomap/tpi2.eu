@@ -6,7 +6,7 @@
     "version": "4.2.1"
   },
   "dependencies": {
-    "hexo": "4.2.1",
+    "hexo": "5.0.1",
     "hexo-clean-css": "^1.0.0",
     "hexo-generator-feed": "^2.2.0",
     "hexo-generator-index": "^1.0.0",
