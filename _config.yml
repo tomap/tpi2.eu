@@ -22,7 +22,7 @@ per_page: 0
 
 # dates
 timezone: 'UTC'
-use_date_for_updated: true
+updated_option: empty
 
 ## Themes:
 theme: minidyne
@@ -45,12 +45,9 @@ feed:
     - atom
     - rss2
 
-uncss:
-  priority: 12
-
 html_minifier:
   decodeEntities: true
-  
+
 markdown_lint:
   default: true
   files: "{Readme.md,source/**/*.md,scafolds/*.md,themes/**/*.md}"
