@@ -16,10 +16,10 @@
     "hexo-renderer-marked": "^3.2.0",
     "hexo-renderer-stylus": "^2.0.1",
     "hexo-tag-flickr": "github:tomap/hexo-tag-flickr",
+    "hexo-theme-minidyne": "^3.0.0",
     "hexo-uncss2": "^1.0.0"
   },
   "devDependencies": {
-    "tachyons": "^4.12.0",
     "hexo-server": "^2.0.0",
     "markdownlint": "^0.20.4",
     "glob": "^7.1.6"

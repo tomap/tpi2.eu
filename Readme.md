@@ -2,7 +2,7 @@
 
 [![Dependency Status](https://david-dm.org/tomap/tpi2.eu.svg)](https://david-dm.org/tomap/tpi2.eu)
 [![Dependency Status](https://david-dm.org/tomap/tpi2.eu/dev-status.svg)](https://david-dm.org/tomap/tpi2.eu?type=dev)
-[![GitHub Actions Status](https://github.com/tomap/tpi2.eu/workflows/nodejs/badge.svg)](https://github.com/tomap/tpi2.eu/actions)
+![deployment](https://github.com/tomap/tpi2.eu/workflows/deployment/badge.svg)
 
 ## How To
 

@@ -26,10 +26,37 @@ updated_option: empty
 
 ## Themes:
 theme: minidyne
+theme_config:
+  menu:
+    Home: /
+    Resume: /resume/
+  index_icon: 🤝
 
-menu:
-  Home: /
-  Resume: /resume/
+  twitter_handle: '@tomap'
+
+  # Social Media Platforms, also used for comments
+  social_platforms:
+    - url: https://stackoverflow.com/users/383029/tomap
+      icon: stackoverflow
+      name: StackOverflow
+    - url: https://github.com/tomap/
+      icon: github
+      type: github
+      name: GitHub
+      repository: tpi2.eu
+    - url: https://www.linkedin.com/in/thomaspiart/
+      icon: linkedin
+      type: linkedin
+      name: LinkedIn
+    - url: https://twitter.com/tomap
+      icon: twitter
+      type: twitter
+      name: Twitter
+      account: tomap
+    - url: /rss2.xml
+      icon: rss
+      type: rss
+      name: Rss
 
 ## Plugins:
 flickr_api_key: 78501c2c12bff9c7a22c013d5155045a
@@ -50,9 +77,9 @@ html_minifier:
 
 markdown_lint:
   default: true
-  files: "{Readme.md,source/**/*.md,scafolds/*.md,themes/**/*.md}"
+  files: "{Readme.md,source/**/*.md,scafolds/*.md}"
   MD013:
-    line_length: 372
-    code_block_line_length: 830
+    line_length: 370
+    code_block_line_length: 800
   MD024: 0
   MD034: 0
