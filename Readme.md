@@ -1,7 +1,6 @@
 # [Thomas Piart's Website](https://tpî.eu), built with [Hexo](https://hexo.io)
 
-[![Dependency Status](https://david-dm.org/tomap/tpi2.eu.svg)](https://david-dm.org/tomap/tpi2.eu)
-[![Dependency Status](https://david-dm.org/tomap/tpi2.eu/dev-status.svg)](https://david-dm.org/tomap/tpi2.eu?type=dev)
+[![Depfu](https://badges.depfu.com/badges/73af18da7af9a1c3def29d4c6f1ae9ff/count.svg)](https://depfu.com/github/tomap/tpi2.eu?project_id=16085)
 ![deployment](https://github.com/tomap/tpi2.eu/workflows/deployment/badge.svg)
 
 ## How To
