@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "hexo-server": "^2.0.0",
-    "markdownlint": "^0.20.4",
+    "markdownlint": "^0.21.0",
     "glob": "^7.1.6"
   },
   "engines": {
