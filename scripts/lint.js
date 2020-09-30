@@ -1,5 +1,4 @@
 /* global hexo */
-
 'use strict';
 
 const markdownLint = require('markdownlint');
