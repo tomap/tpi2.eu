@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
     - uses: actions/checkout@master
     - uses: actions/setup-node@master
@@ -17,7 +17,7 @@ jobs:
         path: public
         name: public
   deploy-firebase:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     needs: build
     if: github.ref == 'refs/heads/master'
     steps:
@@ -36,7 +36,7 @@ jobs:
           firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}
         
   deploy-ovh:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     needs: build
     if: github.ref == 'refs/heads/master'
     steps:
@@ -49,10 +49,10 @@ jobs:
         run: |
           cp assets/indexing-off.txt public/robots.txt
           cp assets/.htaccess public/.htaccess
-          find public -type f -exec curl --user xntprja:${{ secrets.FTP_PASSWORD }} --ftp-create-dirs -T {} ftp://@ftp.cluster014.hosting.ovh.net:21/www/{} \;
+          find public -type f -exec curl --user xntprja:${{ secrets.FTP_PASSWORD }} --ftp-create-dirs -v -T {} ftp://@ftp.cluster014.hosting.ovh.net:21/www/{} \;
           
   deploy-github:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     needs: build
     if: github.ref == 'refs/heads/master'
     steps:
