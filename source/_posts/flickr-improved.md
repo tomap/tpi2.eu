@@ -11,7 +11,7 @@ Here is what I did:
 
 ## Live Urls
 
-I switched from the `farm*.staticflickr.com` urls to *live.statickflickr.com*
+I switched from the `farm*.staticflickr.com` urls to *live.staticflickr.com*
 
 By doing so, I spared myself a call to [flickr.photos.getInfo](https://www.flickr.com/services/api/explore/flickr.photos.getInfo) API for each images.
 
