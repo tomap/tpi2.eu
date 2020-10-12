@@ -36,3 +36,5 @@ Unless you are still using IE, in which case, ... I'm sorry (see https://caniuse
 ## The rest
 
 I also did a bunch of other fixes. See https://github.com/tomap/hexo-tag-flickr/commit/f8d58bb6e44307ba5d03ba04c81d22cac640ded3 I let you check them out.
+
+EDIT 12/10: It seems Feedly crashes when displaying a post with such a large image...
