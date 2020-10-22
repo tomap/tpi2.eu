@@ -9,7 +9,7 @@ jobs:
     - uses: actions/checkout@master
     - uses: actions/setup-node@master
       with:
-        node-version: 14.x
+        node-version: 15.x
     - run: npm i
     - run: npx hexo g
     - uses: actions/upload-artifact@master
