@@ -1,0 +1,16 @@
+image: node:15
+
+pages:
+  script:
+    - npm i
+    - npx hexo generate
+    - cp assets/indexing-off.txt public/robots.txt
+  artifacts:
+    paths:
+      - public
+  cache:
+    paths:
+      - node_modules
+    key: project
+  only:
+    - master
