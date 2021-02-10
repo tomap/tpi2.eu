@@ -10,7 +10,7 @@ Deploying a Hexo site on **Vercel** is super easy!
 Let's remind some basics:
 
 * [Hexo](https://hexo.io) is a static site generator. Meaning that you can generate a pure HTML site that does not rely on a backend server (PHP, nodejs, ...)
-* [Vercel](https://vercel.com/) is a bit like Netlify, it allow you to host your static site, and offers you features to make it more dynamic (authentication, lambda functions)
+* [Vercel](https://vercel.com/) is a bit like Netlify, it allows you to host your static site, and offers you features to make it more dynamic (authentication, lambda functions)
 
 At Vercel, they made a great job at making the onboarding easy and complete.
 
