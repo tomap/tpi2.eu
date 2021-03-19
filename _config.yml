@@ -74,9 +74,6 @@ feed:
     - atom
     - rss2
 
-html_minifier:
-  decodeEntities: true
-
 markdown_lint:
   default: true
   files: "{Readme.md,source/**/*.md,scafolds/*.md}"

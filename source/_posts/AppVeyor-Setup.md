@@ -6,7 +6,7 @@ tags: ["appveyor", "github"]
 ---
 I just configured AppVeyor Continuous Deployment.
 
-To do that, I went to [AppVeyor](https://www.appveyor.com/), [logged in](https://ci.appveyor.com/projects), then [Project](https://ci.appveyor.com/projects) and click [New Project link on top](https://ci.appveyor.com/projects/new), then pick the GitHub Repository that you want to build and deploy ([GitHub.com/tomap/tpi2.eu](https://github.com/tomap/tpi2.eu) in my case).
+To do that, I went to [AppVeyor](https://www.appveyor.com/), [logged in](https://ci.appveyor.com/projects), then [Project](https://ci.appveyor.com/projects) and click [New Project link on top](https://ci.appveyor.com/projects/new), then pick the GitHub Repository that you want to build and deploy ([github.com/tomap/tpi2.eu](https://github.com/tomap/tpi2.eu) in my case).
 
 After that, in the new project, I went to settings, https://ci.appveyor.com/project/tomap/tpi2-eu/settings, in the Build part, I choose Script and added the following:
 
