@@ -16,7 +16,7 @@
     "hexo-renderer-marked": "^4.0.0",
     "hexo-renderer-stylus": "^2.0.1",
     "hexo-tag-flickr": "github:tomap/hexo-tag-flickr",
-    "hexo-theme-minidyne": "3.2.4",
+    "hexo-theme-minidyne": "3.2.5",
     "hexo-uncss2": "^1.0.0"
   },
   "devDependencies": {
