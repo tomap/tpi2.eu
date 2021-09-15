@@ -63,11 +63,9 @@ flickr:
   api_key: 78501c2c12bff9c7a22c013d5155045a
   default_size: 'b'
 
-marked:
-  headerIds: false
-  external_link:
-    enable: false
-    nofollow: true
+markdown:
+  anchors:
+    level: 10
 
 feed:
   type:
