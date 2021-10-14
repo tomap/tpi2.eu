@@ -4,23 +4,32 @@ icon: 📜
 layout: page
 ---
 
-## Experience ##
+## Experience
 
-### Veepee - Previously Vente-Privee ###
+### Veepee - Previously Vente-Privee
 
 French ecommerce company, pioneer in online flash sales of designer brands.
 
-#### IT Senior Software Developer | Feb 2018 to present ####
+#### Lead Developer | Mid 2019 to present
+
+- Tech Lead on a Public Web Portal
+  - Similar to the previous product, but with a React UI
+  - Multilingual team, spread across France and Spain
+  - .Net 5, RabbitMQ, PostgreSQL, EntityFramework, NodeJs, React, Express, Helm, ...
+
+#### Senior Software Developer | Feb 2018 to mid 2019
 
 - Specify, Develop & Test for an API Gateway
-  - .Net Core Microservices
+  - .Net Core Microservices (20 different services, 25 dependencies, ~10 big "clients")
   - Kubernetes, ELK, GitLab CI, Couchbase, AMQ, Docker, Rancher, ...
+  - Critical application with diverse constraints (volume of data, concurrency, ... )
+  - Multi repo codebase, code simple to grasp, but data & business with huge complexity and history
 
-### Enablon - Wolters Kluwer ###
+### Enablon - Wolters Kluwer
 
 Leading software vendor on Sustainability, EH&S and Risk management.
 
-#### R&D Architect | Feb 2014 to Feb 2018 ####
+#### R&D Architect | Feb 2014 to Feb 2018
 
 - Software Architecture (analyze, prototype, test & develop)
   - Mockup & prototype development
@@ -28,14 +37,14 @@ Leading software vendor on Sustainability, EH&S and Risk management.
   - Define technical architecture of components
   - Guide development teams to apply best practices (Unit Tests, Coding Conventions, ...)
 - Migrated from Jenkins & SVN to Azure DevOps & Git & Hosted Agents
-  - Develop integration middleware between internal apps & VSTS (.Net async)
+  - Develop integration middleware between internal apps & Azure DevOps
 - Resolve complex requests
   - Develop embedded diagnostic tools (Web, .Net, Performance, ...)
   - Performance issues (web, database, network, .Net optimization, ...)
 - Participate in sales to win prospects
   - Develop prototypes for sales under time constraints
 
-#### R&D Developer | Dec 2004 to Fev 2014 ####
+#### R&D Developer | Dec 2004 to Fev 2014
 
 Responsible of the development of the reporting tool and the web interface & Scrum Master
 
@@ -56,18 +65,18 @@ Responsible of the development of the reporting tool and the web interface & Scr
   - Define objectives and evaluate
   - Plan and deliver developments with the team
 
-### Chantier Allais ###
+### Chantier Allais
 
 Naval Shipyard in Dieppe (France)
 
-#### R&D Engineer | Jan 2004 - Nov 2004 ####
+#### R&D Engineer | Jan 2004 - Nov 2004
 
 Confidential study around the following topics :
 
 - Modeling poly articulated and hydraulic systems using Bond Graphs
 - Real Time Systems (RTAI), Hydraulic & Mechanics
 
-## Education ##
+## Education
 
 - 2015+ : Pluralsight (C#, Refactoring, Design Patterns, Azure DevOps, ALM, TDD, DDD, ...)
 - 2013 : Certified Scrum Master
@@ -75,32 +84,17 @@ Confidential study around the following topics :
   Graduated in 2004, specialized in embedded system
 - 1999 : Baccalauréat (French secondary school diploma), science major
 
-## Skills ##
+## Skills
 
-### Technical ###
+The things I am fluent in : C# & ASP.Net stack, XUnit/NUnit, CI/CD, Docker, Kubernetes, Nugets, Microservices, SQL, Bash, HTML5, JavaScript (NodeJs & Front), CSS3, Elastic, VS Code, VS, Git, ...
 
-Programing languages :
+The things that I touch regularly : Python, Nginx, Alpine, ...
 
-- Daily use : .Net (VB & C#), SQL, Bash, HTML5 (Canvas), JavaScript (NodeJs & Front), CSS3, LESS
-- Other : Python, C++
+The thing that I rarely touch, but know a little : Perl, WCF, ...
 
-Conception :
+The things from my past : C++, Java, UML, VB6, Apache httpd, MatLab/Simulink (SimMechanics), Scilab, Octave, Mathematica, Svn, ...
 
-- AGILE (Scrum), eXtreme Programming, UML
-
-OS :
-
-- Windows & Unix/Linux (Debian, Ubuntu, Alpine, RTAI)
-
-IDE :
-
-- Visual Studio (C#, VB, C++), Visual Studio Code
-
-Other :
-
-- Git, nginx, Kubernetes, Apache httpd, MatLab/Simulink (SimMechanics), Scilab, Octave, Mathematica
-
-### Language ###
+### Language
 
 French : Native language
 English : Good level, used professionally for the past 10 years. TOEFL : 590 points (Dec 2002)
@@ -108,7 +102,7 @@ Italian : Good level, 1 to 2 months stay every year
 Romanian : Beginner
 German : Beginner (3 months stay in 2003)
 
-## Various ##
+## Various
 
 Sports : Rock climbing (8 years)
 Sailing with crew : Training at Les Glénans (level : "3 voiles"), participated to "Spi Dauphine" Sailing Race in 2003 and 2004 (Sailing Race of 10 days on the mediterranean sea)
