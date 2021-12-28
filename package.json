@@ -22,7 +22,7 @@
   "devDependencies": {
     "glob": "^7.2.0",
     "hexo-server": "^2.0.0",
-    "markdownlint": "^0.24.0"
+    "markdownlint": "^0.25.0"
   },
   "engines": {
     "node": ">= 12"
