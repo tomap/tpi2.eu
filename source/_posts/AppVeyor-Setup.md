@@ -30,7 +30,7 @@ Well, at first, I wanted to use SFTP (you know, for security, ...), which is sup
 
 To test the deployment, I set the FTP folder to **/www/test/**. Strangely, AppVeyor decided that the best folder to deploy my files was: ***/www/test/**public**/...*** instead of directly **/www/test/...** it was one folder too deep.
 
-I googled again and found [that AppVeyor documentation page that helped me](https://www.appveyor.com/docs/packaging-artifacts/#pushing-artifacts-from-scripts). So my solution was to remove the artifact and instead use a PowerShell to publish the files so that their path was __index.html__ instead of __public/index.html__.
+I googled again and found [that AppVeyor documentation page that helped me](https://www.appveyor.com/docs/packaging-artifacts/#pushing-artifacts-from-scripts). So my solution was to remove the artifact and instead use a PowerShell to publish the files so that their path was **index.html** instead of **public/index.html**.
 
 After some trial and errors (~40 of them), I end up with something working. This is all nice and great, but I don't like having all the configuration in AppVeyor, I prefer to have it in my Git Repository, so I can reproduce it somewhere else and I can share it also :)
 
