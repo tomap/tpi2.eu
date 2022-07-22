@@ -10,12 +10,13 @@ layout: page
 
 French ecommerce company, pioneer in online flash sales of designer brands.
 
-#### Lead Developer | Mid 2019 to present
+#### Lead Developer | Mid 2019 to May 2022
 
 - Tech Lead on a Public Web Portal
   - Similar to the previous product, but with a React UI
   - Multilingual team, spread across France and Spain
-  - .Net 5, RabbitMQ, PostgreSQL, EntityFramework, NodeJs, React, Express, Helm, ...
+  - Interesting challenges around micro frontends & authentication
+  - .Net 6, RabbitMQ, PostgreSQL, EntityFramework, Yarp, NodeJs, React, Express, Helm, ...
 
 #### Senior Software Developer | Feb 2018 to mid 2019
 
