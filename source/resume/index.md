@@ -15,7 +15,7 @@ French ecommerce company, pioneer in online flash sales of designer brands.
 - Tech Lead on a Public Web Portal
   - Similar to the previous product, but with a React UI
   - Multilingual team, spread across France and Spain
-  - Interesting challenges around micro frontends & authentication 
+  - Interesting challenges around micro frontends & authentication
   - .Net 6, RabbitMQ, PostgreSQL, EntityFramework, Yarp, NodeJs, React, Express, Helm, ...
 
 #### Senior Software Developer | Feb 2018 to mid 2019
