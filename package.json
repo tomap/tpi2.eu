@@ -25,7 +25,7 @@
     "markdownlint": "^0.26.0"
   },
   "engines": {
-    "node": ">= 18"
+    "node": ">= 16"
   },
   "scripts": {
     "build": "hexo g",
