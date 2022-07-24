@@ -28,7 +28,7 @@
     "node": ">= 16"
   },
   "scripts": {
-    "build": "hexo g",
+    "build": "hexo g && cp assets/indexing-on.txt public/robots.txt && cp public/assets/404.html public/404.html",
     "build-off": "hexo g && cp assets/indexing-off.txt public/robots.txt"
   }
 }
