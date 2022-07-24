@@ -31,7 +31,7 @@ jobs:
           path: public
       - name: deploy
         run: |
-          cp assets/indexing-on.txt public/robots.txt
+          cp assets/indexing-off.txt public/robots.txt
           npm i -g firebase-tools
           firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}
         
