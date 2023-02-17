@@ -13,7 +13,7 @@
     "hexo-generator-tag": "^2.0.0",
     "hexo-html-minifier": "^1.0.0",
     "hexo-renderer-ejs": "^2.0.0",
-    "hexo-renderer-markdown-it": "^6.0.1",
+    "hexo-renderer-markdown-it": "^7.0.0",
     "hexo-renderer-stylus": "^2.1.0",
     "hexo-tag-flickr": "github:tomap/hexo-tag-flickr",
     "hexo-theme-minidyne": "3.2.8",
