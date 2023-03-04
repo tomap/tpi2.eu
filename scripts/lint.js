@@ -3,7 +3,7 @@
 
 const markdownLint = require('markdownlint');
 
-const glob = require('glob');
+const { globSync } = require('glob');
 
 hexo.extend.filter.register("after_generate",function(){
     
@@ -11,7 +11,7 @@ hexo.extend.filter.register("after_generate",function(){
         return;
     }
     const options = {
-        "files" : glob.sync(hexo.config.markdown_lint.files),
+        "files" : globSync(hexo.config.markdown_lint.files),
         "config": hexo.config.markdown_lint || {}
     };
     
