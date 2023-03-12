@@ -36,6 +36,10 @@ theme_config:
 
   # Social Media Platforms, also used for comments
   social_platforms:
+    - url: https://hachyderm.io/@tomap
+      icon: mastodon
+      name: Mastodon
+      type: mastodon
     - url: https://stackoverflow.com/users/383029/tomap
       icon: stackoverflow
       name: StackOverflow
@@ -66,6 +70,7 @@ flickr:
 markdown:
   anchors:
     level: 10
+  fuzzyLink: false
 
 feed:
   type:
