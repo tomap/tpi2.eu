@@ -1,4 +1,4 @@
-image: node:15
+image: node:20
 
 pages:
   script:
