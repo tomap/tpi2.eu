@@ -6,6 +6,14 @@ layout: page
 
 ## Experience
 
+### Credit Agricole CIB for eXalt-IT
+
+#### Lead Developer | May 2022 to present
+
+Working on .Net microservices delivering interest curves & realtime market data to traders.
+
+Tech: Kubernetes, ASP.Net Core, Redis, SignalR, Excel-DNA, Couchbase, Gitlab, Yarp, ELK, ...
+
 ### Veepee - Previously Vente-Privee
 
 French ecommerce company, pioneer in online flash sales of designer brands.

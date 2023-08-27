@@ -30,6 +30,7 @@ theme_config:
   menu:
     Home: /
     Resume: /resume/
+    Promote: /promote/
   index_icon: 🤝
 
   twitter_handle: '@tomap'
