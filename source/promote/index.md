@@ -27,6 +27,7 @@ Here is my current list as of Aug 2023:
 * 𝋃 Excel-DNA on dotnet > 6 https://github.com/Excel-DNA/ExcelDna/issues/538
 * 𝋄 Better understanding the source of a Security Advisory: https://github.com/dotnet/runtime/issues/90170#issuecomment-1676341808
 * 𝋅 Publish newer official Docker images for RedisInsight: https://github.com/RedisInsight/RedisInsight/issues/519
+* 𝋆 https://github.com/dotnet/AspNetCore.Docs/issues/30364
 
 So, don't hesitate to add a thumbs up for those issue!
 
