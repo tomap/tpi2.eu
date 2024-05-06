@@ -1,26 +1,29 @@
 {
   "name": "tpi.eu",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": true,
   "hexo": {
     "version": "7.2.0"
   },
   "dependencies": {
     "hexo": "7.2.0",
-    "hexo-clean-css": "^2.0.0",
+    "hexo-postcss": "^2.0.0",
+    "postcss-import": "^16.1.0",
+    "cssnano": "^7.0.1",
     "hexo-generator-feed": "^3.0.0",
     "hexo-generator-index": "^3.0.0",
     "hexo-generator-tag": "^2.0.0",
     "hexo-html-minifier": "^1.0.0",
+
     "hexo-renderer-ejs": "^2.0.0",
-    "hexo-renderer-markdown-it": "^7.1.0",
-    "hexo-renderer-stylus": "^3.0.0",
+    "hexo-renderer-markdown-it": "^7.1.1",
     "hexo-tag-flickr": "github:tomap/hexo-tag-flickr",
-    "hexo-theme-minidyne": "3.3.6",
+    "hexo-theme-minidyne": "4.0.1",
     "hexo-uncss2": "^2.3.3"
+
   },
   "devDependencies": {
-    "glob": "^10.3.10",
+    "glob": "^10.3.12",
     "hexo-server": "^3.0.0",
     "markdownlint": "^0.34.0"
   },
@@ -29,6 +32,7 @@
   },
   "scripts": {
     "build": "hexo g && cp assets/indexing-on.txt public/robots.txt && cp public/assets/404.html public/404.html",
+    "b": "hexo g -f",
     "build-off": "hexo g && cp assets/indexing-off.txt public/robots.txt"
   }
 }
