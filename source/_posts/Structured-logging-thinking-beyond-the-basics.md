@@ -1,22 +1,22 @@
 ---
 date : 2024-06-09
 title : Structured Logging in ASP.Net with ELK - thinking beyond the basics
-icon: 🪵
+icon: ✂️
 tags: ["csharp", "aspnetcore"]
 ---
-# Why are we still talking about it?
+## Why are we still talking about it?
 
 This article is on how to go beyond structured logging, especially in the context of Logging in Json when the Json is ingested by Elastic Search via Filebeat (or equivalent)
 
 There are constraints in this case that needs to be taken into account if you want to optimize your logging output
 
-# What you are doing
+## What you are doing
 
 So you are logging for Elastic Search.
 
 Your logs are going to be scrapped from the console and sent to Elastic and you are going to be able to display them nicely in Kibana.
 
-Using Microsoft.Extensions.Logging (ILogger<T>) and JsonConsoleFormatter, you should have code logging like that:
+Using Microsoft.Extensions.Logging (`ILogger<T>`) and JsonConsoleFormatter, you should have code logging like that:
 
 ```csharp
 // This is set via injection
@@ -70,11 +70,11 @@ And this will produce the following result:
 
 I have indented those two Jsons, but by default (and this is good for parser), each json will be serialized on a single line. The initial size is 718 bytes
 
-# Can we improve ?
+## Can we improve ?
 
 Right... There are plenty of issues with this output. Let's address them :)
 
-This is **super verbose and redundant** and this is an issue because we are logging to the console. 
+This is **super verbose and redundant** and this is an issue because we are logging to the console.
 By default, if a message is longer than ~16k, it will be split over multiple lines, and FileBeat will have a hard time parsing it.
 
 Note that the max size of the console line can be different on your system, and you (or your DevOps) can change it but the longer it is, the longer your message can be, and that might be an issue for Filebeat (or the equivalent on your system) in terms of performances, throughput, ...
@@ -87,11 +87,11 @@ So our objective will be to reduce verbosity and redundancy when possible
   * Message is duplicated in Message and in State.Message, even when there is no placeholder
   * It is nice to have access to State.{OriginalFormat} because I can easily filter on this type of message in Kibana
 
-# How do we do that ?
+## How do we do that ?
 
 Let's take the json console log formatter from Microsoft : [JsonConsoleFormatter](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.Extensions.Logging.Console/src/JsonConsoleFormatter.cs) (and [the specific commit at the time of writing](https://github.com/dotnet/runtime/blob/02ddff3430d976a7cb3a785b1ec7e33e80796e71/src/libraries/Microsoft.Extensions.Logging.Console/src/JsonConsoleFormatter.cs))
 
-And adapt it to our needs. 
+And adapt it to our needs.
 
 If we copy this class in our project, we'll also need to create a CompactJsonConsoleFormatterOptions (the equivalent of [JsonConsoleFormatterOptions](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.Extensions.Logging.Console/src/JsonConsoleFormatterOptions.cs) )
 
@@ -257,8 +257,10 @@ The new json looks like this:
 As you can see, we have invalid json with a duplicate property: `Message`.
 The good news is that the state message is redundant with the field message so we can remove it
 
-Also, in the case of scope messages, it's a `.ToString()` of the scope object. In our case, it's just a List<T>, so it is useless.
-In the case of Microsoft Scopes (request scopes), the object used is a bit more interesting, it is an internal object [ActivityLogScope](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.Extensions.Logging/src/LoggerFactoryScopeProvider.cs#L186) overloading the `ToString()` function. However this implementation is just repeating the same exact information that we have as properties later in the message, so we can remove this Message also.
+Also, in the case of scope messages, it's a `.ToString()` of the scope object.
+In our case, it's just a `List<T>`, so it is useless.
+In the case of Microsoft Scopes (request scopes), the object used is a bit more interesting, it is an internal object [ActivityLogScope](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.Extensions.Logging/src/LoggerFactoryScopeProvider.cs#L186) overloading the `ToString()` function.
+However this implementation is just repeating the same exact information that we have as properties later in the message, so we can remove this Message also.
 
 Here is the new json:
 
@@ -287,7 +289,7 @@ Here is the new json:
 We can go further :)
 
 The Category property represents the namespace of the class emitting the log.
-What is expected is that  most of the logs will come from our own namespace (in my case `MyApplication.`) so we could replace this with something shorter (a `-`). 
+What is expected is that  most of the logs will come from our own namespace (in my case `MyApplication.`) so we could replace this with something shorter (a `-`).
 Also, when there is no state (no placeholder in our message), the state property `{OriginalFormat}` contains the same information as our Message, so we can drop it.
 
 ```json
@@ -312,7 +314,7 @@ Also, when there is no state (no placeholder in our message), the state property
 
 We are now at 318 bytes, less than half of the initial size
 
-Also, if we log a large message, it won't be duplicated in the json if it contains no placeholder. 
+Also, if we log a large message, it won't be duplicated in the json if it contains no placeholder.
 So if you are dumping potentially large payload in your message and you make sure you are not using placeholders, then you can cut the size of your logs in two
 
 Is if all great, but we have just created an issue which was not present before:
@@ -320,6 +322,7 @@ Is if all great, but we have just created an issue which was not present before:
 If two scopes share the same property, they could collide! Same for a scope and a state sharing the same property
 
 Ex:
+
 ```csharp
 using var globalLogScope = _logger.BeginScope(new List<KeyValuePair<string, object>> { new("Collide", "ABCDE"), });
 // This is a more local scope applied to only part of the process
@@ -356,6 +359,6 @@ keys.TryAdd(item.Key + suffixString);
 writer.WriteString(item.Key + suffixString, item.Value.ToString());
 ```
 
-This code is not bullet proof, but I have rarely seen more than one collision. 
+This code is not bullet proof, but I have rarely seen more than one collision.
 
-Et voila, a much optimized Json Console formatter. 
+Et voila, a much optimized Json Console formatter.
