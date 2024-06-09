@@ -9,12 +9,11 @@
     "hexo": "7.2.0",
     "hexo-postcss": "^2.0.0",
     "postcss-import": "^16.1.0",
-    "cssnano": "^7.0.1",
+    "cssnano": "^7.0.2",
     "hexo-generator-feed": "^3.0.0",
     "hexo-generator-index": "^3.0.0",
     "hexo-generator-tag": "^2.0.0",
     "hexo-html-minifier": "^1.0.0",
-
     "hexo-renderer-ejs": "^2.0.0",
     "hexo-renderer-markdown-it": "^7.1.1",
     "hexo-tag-flickr": "github:tomap/hexo-tag-flickr",
@@ -23,7 +22,7 @@
 
   },
   "devDependencies": {
-    "glob": "^10.3.12",
+    "glob": "^10.4.1",
     "hexo-server": "^3.0.0",
     "markdownlint": "^0.34.0"
   },
