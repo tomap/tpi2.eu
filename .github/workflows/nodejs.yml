@@ -4,12 +4,12 @@ on: [push]
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
     - uses: actions/checkout@master
     - uses: actions/setup-node@master
       with:
-        node-version: 20.x
+        node-version: 22.x
     - run: npm i
     - run: npx hexo g
     - uses: actions/upload-artifact@master
@@ -17,14 +17,14 @@ jobs:
         path: public
         name: public
   deploy-firebase:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     needs: build
     if: github.ref == 'refs/heads/master'
     steps:
       - uses: actions/checkout@master
       - uses: actions/setup-node@master
         with:
-          node-version: 20.x
+          node-version: 22.x
       - uses: actions/download-artifact@master
         with:
           name: public
@@ -36,7 +36,7 @@ jobs:
           firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}
         
   deploy-ovh:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     needs: build
     if: github.ref == 'refs/heads/master'
     steps:
@@ -53,7 +53,7 @@ jobs:
           find . -type f -exec curl --user xntprja:${{ secrets.FTP_PASSWORD }} --ftp-create-dirs -v -T {} ftp://ftp.cluster014.hosting.ovh.net:21/www/{} \;
           
   deploy-github:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     needs: build
     if: github.ref == 'refs/heads/master'
     steps:
