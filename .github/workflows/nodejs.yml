@@ -78,4 +78,26 @@ jobs:
           git commit -m "Update site"
           git remote add origin-pages https://tomap:${{ secrets.GH_TOKEN }}@github.com/tomap/tomap.github.io.git
           git push --set-upstream origin-pages master
-    
+
+  test:
+    runs-on: ubuntu-latest
+    needs: build
+    # if: github.ref == 'refs/heads/master'
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/download-artifact@master
+        with:
+          name: public
+      - name: github
+        run: |
+          wget https://dist.ipfs.io/go-ipfs/v0.4.23/go-ipfs_v0.4.23_linux-amd64.tar.gz
+          tar xvfz go-ipfs_v0.4.23_linux-amd64.tar.gz
+          cd go-ipfs
+          ./ipfs init
+          ./ipfs daemon > ipfs.log &
+          
+          ./ipfs add -r ../public/
+          cat ipfs.log
+          ls
+          ./ipfs name publish QmNUhKfcGJyQJnZu3AKn8NoiomDwDCRBicgqPt1YRqJBCz
+          
