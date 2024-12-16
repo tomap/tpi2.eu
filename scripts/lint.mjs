@@ -1,5 +1,4 @@
-/* global hexo */
-'use strict';
+// @ts-check
 
 import { lint as lintAsync } from "markdownlint/async";
 
