@@ -6,13 +6,15 @@ layout: page
 
 ## Experience
 
-### Credit Agricole CIB for eXalt-IT
+### Credit Agricole Corporate Investment Bank (IOS / CMI) for eXalt-IT
 
 #### Lead Developer | May 2022 to present
 
 Working on .Net microservices delivering interest curves & realtime market data to traders.
 
-Tech: Kubernetes, ASP.Net Core, Redis, SignalR, Excel-DNA, Couchbase, Gitlab, Yarp, ELK, ...
+Achievments: More than 200 users, 31M market data updates streamed per day.
+
+Tech: Kubernetes, .Net 6 to 9 & ASP.Net Core, Quartz.Net, Redis, SignalR, Excel-DNA, Marten, Couchbase, Gitlab, Yarp, ELK, ...
 
 ### Veepee - Previously Vente-Privee
 
