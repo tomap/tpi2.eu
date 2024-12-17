@@ -9,7 +9,7 @@
     "hexo": "7.3.0",
     "hexo-postcss": "^2.0.0",
     "postcss-import": "^16.1.0",
-    "cssnano": "^7.0.2",
+    "cssnano": "^7.0.6",
     "hexo-generator-feed": "^3.0.0",
     "hexo-generator-index": "^4.0.0",
     "hexo-generator-tag": "^2.0.0",
@@ -17,7 +17,7 @@
     "hexo-renderer-ejs": "^2.0.0",
     "hexo-renderer-markdown-it": "^7.1.1",
     "hexo-tag-flickr": "github:tomap/hexo-tag-flickr",
-    "hexo-theme-minidyne": "4.0.1"
+    "hexo-theme-minidyne": "4.0.2"
   },
   "devDependencies": {
     "glob": "^11.0.0",
