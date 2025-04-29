@@ -1,9 +1,8 @@
-/* global hexo */
-'use strict';
+// @ts-check
 
-const markdownLint = require('markdownlint');
+import { lint as lintAsync } from "markdownlint/async";
 
-const { globSync } = require('glob');
+import { globSync } from 'glob';
 
 hexo.extend.filter.register("after_generate",function(){
     
@@ -14,10 +13,11 @@ hexo.extend.filter.register("after_generate",function(){
         "files" : globSync(hexo.config.markdown_lint.files),
         "config": hexo.config.markdown_lint || {}
     };
-    
-    markdownLint(options, function callback(err, result) {
-        if (!err && result.toString().length > 0) {
-            hexo.log.warn(result.toString());
+
+    // Makes an asynchronous call, uses result.toString for pretty formatting
+    lintAsync(options, function callback(error, results) {
+        if (!error && results) {
+          console.log(results.toString());
         }
     });
 });
