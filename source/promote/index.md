@@ -25,7 +25,7 @@ Here is my current list as of October 2024:
 * 𝋁 Improvement on SignalR: https://github.com/dotnet/aspnetcore/issues/48624
 * 𝋂 Improvement in SignalR Docs: https://github.com/dotnet/AspNetCore.Docs/issues/29435
   * But I think this one is being solved by this MR: https://github.com/StackExchange/StackExchange.Redis/issues/2479 (will probably land in .Net 7 or 8)
-* 𝋃 ~~Excel-DNA on dotnet > 6 https://github.com/Excel-DNA/ExcelDna/issues/538 .~~ solved
+* 𝋃  nice improvement in DevToys https://github.com/DevToys-app/DevToys/issues/1553
 * 𝋄 Better understanding the source of a Security Advisory: https://github.com/dotnet/runtime/issues/90170#issuecomment-1676341808
 * 𝋅 ~~Publish newer official Docker images for RedisInsight: https://github.com/RedisInsight/RedisInsight/issues/519 .~~ not needed
 * 𝋆 https://github.com/dotnet/AspNetCore.Docs/issues/30364
