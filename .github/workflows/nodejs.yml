@@ -9,7 +9,7 @@ jobs:
     - uses: actions/checkout@master
     - uses: actions/setup-node@master
       with:
-        node-version: 22.x
+        node-version: 24.x
     - run: npm i
     - run: npx hexo g
     - uses: actions/upload-artifact@master
@@ -24,7 +24,7 @@ jobs:
       - uses: actions/checkout@master
       - uses: actions/setup-node@master
         with:
-          node-version: 22.x
+          node-version: 24.x
       - uses: actions/download-artifact@master
         with:
           name: public
@@ -78,4 +78,3 @@ jobs:
           git commit -m "Update site"
           git remote add origin-pages https://tomap:${{ secrets.GH_TOKEN }}@github.com/tomap/tomap.github.io.git
           git push --set-upstream origin-pages master
-    
