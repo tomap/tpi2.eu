@@ -21,7 +21,7 @@ In order to improve the odds of those contributions to be taken into account, I 
 
 Here is my current list as of October 2024:
 
-* 𝋀 Weird .Net 9 issue https://hachyderm.io/@tomap/113550587198826358
+* 𝋀 Add stack trace formater to DevToys: https://github.com/DevToys-app/DevToys/issues/1520
 * 𝋁 Improvement on SignalR: https://github.com/dotnet/aspnetcore/issues/48624
 * 𝋂 Improvement in SignalR Docs: https://github.com/dotnet/AspNetCore.Docs/issues/29435
   * But I think this one is being solved by this MR: https://github.com/StackExchange/StackExchange.Redis/issues/2479 (will probably land in .Net 7 or 8)
