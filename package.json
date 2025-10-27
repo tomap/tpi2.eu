@@ -3,10 +3,10 @@
   "version": "1.0.5",
   "private": true,
   "hexo": {
-    "version": "8.0.0"
+    "version": "8.1.0"
   },
   "dependencies": {
-    "hexo": "8.0.0",
+    "hexo": "8.1.0",
     "hexo-postcss": "^2.1.1",
     "postcss-import": "^16.1.0",
     "cssnano": "^7.0.6",
