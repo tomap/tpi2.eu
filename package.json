@@ -10,7 +10,7 @@
     "hexo-postcss": "^2.1.1",
     "postcss-import": "^16.1.0",
     "cssnano": "^7.0.6",
-    "hexo-generator-feed": "^3.0.0",
+    "hexo-generator-feed": "^4.0.0",
     "hexo-generator-index": "^4.0.0",
     "hexo-generator-tag": "^2.0.0",
     "hexo-html-minifier": "^1.0.0",
