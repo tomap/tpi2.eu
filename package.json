@@ -6,7 +6,7 @@
     "version": "8.1.1"
   },
   "dependencies": {
-    "hexo": "8.1.1",
+    "hexo": "8.1.2",
     "hexo-postcss": "^2.1.1",
     "postcss-import": "^16.1.0",
     "cssnano": "^7.0.6",
