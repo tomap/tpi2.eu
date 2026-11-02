@@ -1,7 +1,7 @@
 /* global hexo */
 'use strict';
 
-const markdownLint = require('markdownlint');
+const { lint } = require('markdownlint/async');
 
 const { globSync } = require('glob');
 
@@ -15,9 +15,9 @@ hexo.extend.filter.register("after_generate",function(){
         "config": hexo.config.markdown_lint || {}
     };
     
-    markdownLint(options, function callback(err, result) {
-        if (!err && result.toString().length > 0) {
-            hexo.log.warn(result.toString());
+    lint(options, function callback(err, result) {
+        if (!err && Object.values(result).some((errors) => errors.length > 0)) {
+            hexo.log.warn(JSON.stringify(result, null, 2));
         }
     });
 });
